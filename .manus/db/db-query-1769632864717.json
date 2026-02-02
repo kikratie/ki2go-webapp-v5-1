@@ -1,0 +1,139 @@
+{
+  "query": "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'taskTemplates' ORDER BY ORDINAL_POSITION;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'taskTemplates' ORDER BY ORDINAL_POSITION;",
+  "rows": [
+    {
+      "COLUMN_NAME": "id"
+    },
+    {
+      "COLUMN_NAME": "slug"
+    },
+    {
+      "COLUMN_NAME": "name"
+    },
+    {
+      "COLUMN_NAME": "title"
+    },
+    {
+      "COLUMN_NAME": "description"
+    },
+    {
+      "COLUMN_NAME": "shortDescription"
+    },
+    {
+      "COLUMN_NAME": "categoryId"
+    },
+    {
+      "COLUMN_NAME": "businessAreaId"
+    },
+    {
+      "COLUMN_NAME": "icon"
+    },
+    {
+      "COLUMN_NAME": "color"
+    },
+    {
+      "COLUMN_NAME": "variableSchema"
+    },
+    {
+      "COLUMN_NAME": "superprompt"
+    },
+    {
+      "COLUMN_NAME": "superpromptVersion"
+    },
+    {
+      "COLUMN_NAME": "estimatedTimeSavings"
+    },
+    {
+      "COLUMN_NAME": "creditCost"
+    },
+    {
+      "COLUMN_NAME": "allowedFileTypes"
+    },
+    {
+      "COLUMN_NAME": "maxFileSize"
+    },
+    {
+      "COLUMN_NAME": "llmModel"
+    },
+    {
+      "COLUMN_NAME": "llmTemperature"
+    },
+    {
+      "COLUMN_NAME": "templateStatus"
+    },
+    {
+      "COLUMN_NAME": "displayOrder"
+    },
+    {
+      "COLUMN_NAME": "isFeatured"
+    },
+    {
+      "COLUMN_NAME": "usageCount"
+    },
+    {
+      "COLUMN_NAME": "avgRating"
+    },
+    {
+      "COLUMN_NAME": "createdBy"
+    },
+    {
+      "COLUMN_NAME": "updatedBy"
+    },
+    {
+      "COLUMN_NAME": "createdAt"
+    },
+    {
+      "COLUMN_NAME": "updatedAt"
+    },
+    {
+      "COLUMN_NAME": "maxTokens"
+    },
+    {
+      "COLUMN_NAME": "outputFormat"
+    },
+    {
+      "COLUMN_NAME": "exampleOutput"
+    },
+    {
+      "COLUMN_NAME": "documentRequired"
+    },
+    {
+      "COLUMN_NAME": "documentCount"
+    },
+    {
+      "COLUMN_NAME": "maxPages"
+    },
+    {
+      "COLUMN_NAME": "documentRelevanceCheck"
+    },
+    {
+      "COLUMN_NAME": "documentDescription"
+    },
+    {
+      "COLUMN_NAME": "maskingRequired"
+    },
+    {
+      "COLUMN_NAME": "maskingTypes"
+    },
+    {
+      "COLUMN_NAME": "autoMasking"
+    },
+    {
+      "COLUMN_NAME": "keywords"
+    },
+    {
+      "COLUMN_NAME": "uniqueId"
+    },
+    {
+      "COLUMN_NAME": "creationMethod"
+    },
+    {
+      "COLUMN_NAME": "sourceMetapromptId"
+    }
+  ],
+  "messages": [],
+  "stdout": "COLUMN_NAME\nid\nslug\nname\ntitle\ndescription\nshortDescription\ncategoryId\nbusinessAreaId\nicon\ncolor\nvariableSchema\nsuperprompt\nsuperpromptVersion\nestimatedTimeSavings\ncreditCost\nallowedFileTypes\nmaxFileSize\nllmModel\nllmTemperature\ntemplateStatus\ndisplayOrder\nisFeatured\nusageCount\navgRating\ncreatedBy\nupdatedBy\ncreatedAt\nupdatedAt\nmaxTokens\noutputFormat\nexampleOutput\ndocumentRequired\ndocumentCount\nmaxPages\ndocumentRelevanceCheck\ndocumentDescription\nmaskingRequired\nmaskingTypes\nautoMasking\nkeywords\nuniqueId\ncreationMethod\nsourceMetapromptId\n",
+  "stderr": "",
+  "execution_time_ms": 72
+}

@@ -1,0 +1,40 @@
+{
+  "query": "-- Setze documentRequired=1 für Templates mit DOKUMENT Variable vom Typ file\nUPDATE taskTemplates \nSET documentRequired = 1, documentCount = 1\nWHERE uniqueId IN ('SP-2026-003', 'SP-2026-004', 'SP-2026-006');\n\n-- Zeige das Ergebnis\nSELECT uniqueId, title, documentRequired, documentCount \nFROM taskTemplates \nWHERE uniqueId IN ('SP-2026-001', 'SP-2026-003', 'SP-2026-004', 'SP-2026-006', 'SP-2026-007')\nORDER BY uniqueId;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute -- Setze documentRequired=1 für Templates mit DOKUMENT Variable vom Typ file\nUPDATE taskTemplates \nSET documentRequired = 1, documentCount = 1\nWHERE uniqueId IN ('SP-2026-003', 'SP-2026-004', 'SP-2026-006');\n\n-- Zeige das Ergebnis\nSELECT uniqueId, title, documentRequired, documentCount \nFROM taskTemplates \nWHERE uniqueId IN ('SP-2026-001', 'SP-2026-003', 'SP-2026-004', 'SP-2026-006', 'SP-2026-007')\nORDER BY uniqueId;",
+  "rows": [
+    {
+      "uniqueId": "SP-2026-001",
+      "title": "Vertrags Analyse",
+      "documentRequired": "1",
+      "documentCount": "10"
+    },
+    {
+      "uniqueId": "SP-2026-003",
+      "title": "Bilanz Monat prüfen ",
+      "documentRequired": "1",
+      "documentCount": "1"
+    },
+    {
+      "uniqueId": "SP-2026-004",
+      "title": "Vertragsanalyse 2",
+      "documentRequired": "1",
+      "documentCount": "1"
+    },
+    {
+      "uniqueId": "SP-2026-006",
+      "title": "CV Analyse und Bewertung",
+      "documentRequired": "1",
+      "documentCount": "1"
+    },
+    {
+      "uniqueId": "SP-2026-007",
+      "title": "Stellenanzeigen psychologisch optimieren",
+      "documentRequired": "0",
+      "documentCount": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "uniqueId\ttitle\tdocumentRequired\tdocumentCount\nSP-2026-001\tVertrags Analyse\t1\t10\nSP-2026-003\tBilanz Monat prüfen \t1\t1\nSP-2026-004\tVertragsanalyse 2\t1\t1\nSP-2026-006\tCV Analyse und Bewertung\t1\t1\nSP-2026-007\tStellenanzeigen psychologisch optimieren\t0\t1\n",
+  "stderr": "",
+  "execution_time_ms": 68
+}

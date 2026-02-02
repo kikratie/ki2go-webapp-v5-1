@@ -1,0 +1,25 @@
+Error Stack Trace from Screenshot:
+
+Nae@https://ki2goapp-qtfyr7bg.manus.space/assets/index-BXVFjU7d.js:7802:46198
+tO@https://ki2goapp-qtfyr7bg.manus.space/assets/index-BXVFjU7d.js:49:48877
+sK@https://ki2goapp-qtfyr7bg.manus.space/assets/index-BXVFjU7d.js:49:68484
+gK@https://ki2goapp-qtfyr7bg.manus.space/assets/index-BXVFjU7d.js:49:84228
+GK@https://ki2goapp-qtfyr7bg.manus.space/assets/index-BXVFjU7d.js:49:118162
+Rde@https://ki2goapp-qtfyr7bg.manus.space/assets/index-BXVFjU7d.js:49:117196
+UO@https://ki2goapp-qtfyr7bg.manus.space/assets/index-BXVFjU7d.js:49:117022
+BK@https://ki2goapp-qtfyr7bg.manus.space/assets/index-BXVFjU7d.js:49:113784
+r$@https://ki2goapp-qtfyr7bg.manus.space/assets/index-BXVFjU7d.js:49:125840
+Op@https://ki2goapp-qtfyr7bg.manus.space/assets/index-BXVFjU7d.js:49:124381
+a$@https://ki2goapp-qtfyr7bg.manus.space/assets/index-BXVFjU7d.js:49:124663
+F1e/Ude/<@https://ki2goapp-qtfyr7bg.manus.space/assets/index-BXVFjU7d.js:49:125901
+
+Analysis:
+- The error occurs at line 7802:46198 which is in the minified bundle
+- The function name "Nae" suggests it's a React component or hook
+- The stack trace shows React rendering pipeline (tO, sK, gK, GK, etc.)
+- This is likely a runtime error during component rendering
+
+Possible causes:
+1. SelectItem with empty value="" (known issue)
+2. Undefined data being accessed
+3. Missing null checks

@@ -1,0 +1,52 @@
+{
+  "query": "SELECT ot.id, ot.templateId, ot.assignedAt, tt.uniqueId, tt.title \nFROM organizationTemplates ot \nLEFT JOIN taskTemplates tt ON ot.templateId = tt.id \nWHERE ot.organizationId = 330025\nORDER BY ot.assignedAt DESC;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute SELECT ot.id, ot.templateId, ot.assignedAt, tt.uniqueId, tt.title \nFROM organizationTemplates ot \nLEFT JOIN taskTemplates tt ON ot.templateId = tt.id \nWHERE ot.organizationId = 330025\nORDER BY ot.assignedAt DESC;",
+  "rows": [
+    {
+      "id": "330030",
+      "templateId": "240014",
+      "assignedAt": "2026-01-29 16:44:21",
+      "uniqueId": "SP-2026-007",
+      "title": "Stellenanzeigen psychologisch optimieren"
+    },
+    {
+      "id": "330029",
+      "templateId": "240013",
+      "assignedAt": "2026-01-29 16:44:19",
+      "uniqueId": "SP-2026-006",
+      "title": "CV Analyse und Bewertung"
+    },
+    {
+      "id": "330028",
+      "templateId": "150185",
+      "assignedAt": "2026-01-29 16:44:17",
+      "uniqueId": "SP-2026-004",
+      "title": "Vertragsanalyse 2"
+    },
+    {
+      "id": "330027",
+      "templateId": "150101",
+      "assignedAt": "2026-01-29 16:44:12",
+      "uniqueId": "NULL",
+      "title": "Vertrag prüfen"
+    },
+    {
+      "id": "330026",
+      "templateId": "150078",
+      "assignedAt": "2026-01-29 16:27:16",
+      "uniqueId": "SP-2026-003",
+      "title": "Bilanz Monat prüfen "
+    },
+    {
+      "id": "330025",
+      "templateId": "4",
+      "assignedAt": "2026-01-29 16:26:53",
+      "uniqueId": "SP-2026-001",
+      "title": "Vertrags Analyse"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttemplateId\tassignedAt\tuniqueId\ttitle\n330030\t240014\t2026-01-29 16:44:21\tSP-2026-007\tStellenanzeigen psychologisch optimieren\n330029\t240013\t2026-01-29 16:44:19\tSP-2026-006\tCV Analyse und Bewertung\n330028\t150185\t2026-01-29 16:44:17\tSP-2026-004\tVertragsanalyse 2\n330027\t150101\t2026-01-29 16:44:12\tNULL\tVertrag prüfen\n330026\t150078\t2026-01-29 16:27:16\tSP-2026-003\tBilanz Monat prüfen \n330025\t4\t2026-01-29 16:26:53\tSP-2026-001\tVertrags Analyse\n",
+  "stderr": "",
+  "execution_time_ms": 67
+}

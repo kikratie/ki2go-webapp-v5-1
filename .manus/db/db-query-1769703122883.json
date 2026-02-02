@@ -1,0 +1,50 @@
+{
+  "query": "\n-- 1. Free-Plan deaktivieren\nUPDATE plans SET isActive = 0, isDefault = 0 WHERE slug = 'free';\n\n-- 2. Starter als Default setzen und Limits anpassen\nUPDATE plans SET \n  isDefault = 1, \n  taskLimit = 100, \n  teamMemberLimit = 5,\n  features = '[\"basic_templates\",\"upload\",\"download\",\"export_pdf\",\"masking\"]'\nWHERE slug = 'starter';\n\n-- 3. Business: teamMemberLimit erhöhen und Masking hinzufügen\nUPDATE plans SET \n  teamMemberLimit = 20,\n  features = '[\"basic_templates\",\"upload\",\"download\",\"export_pdf\",\"template_sharing\",\"monitoring\",\"team_management\",\"priority_support\",\"masking\"]'\nWHERE slug = 'business';\n\n-- 4. Zeige die aktualisierten Pläne\nSELECT id, slug, name, taskLimit, teamMemberLimit, features, isActive, isDefault FROM plans ORDER BY sortOrder;\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute \n-- 1. Free-Plan deaktivieren\nUPDATE plans SET isActive = 0, isDefault = 0 WHERE slug = 'free';\n\n-- 2. Starter als Default setzen und Limits anpassen\nUPDATE plans SET \n  isDefault = 1, \n  taskLimit = 100, \n  teamMemberLimit = 5,\n  features = '[\"basic_templates\",\"upload\",\"download\",\"export_pdf\",\"masking\"]'\nWHERE slug = 'starter';\n\n-- 3. Business: teamMemberLimit erhöhen und Masking hinzufügen\nUPDATE plans SET \n  teamMemberLimit = 20,\n  features = '[\"basic_templates\",\"upload\",\"download\",\"export_pdf\",\"template_sharing\",\"monitoring\",\"team_management\",\"priority_support\",\"masking\"]'\nWHERE slug = 'business';\n\n-- 4. Zeige die aktualisierten Pläne\nSELECT id, slug, name, taskLimit, teamMemberLimit, features, isActive, isDefault FROM plans ORDER BY sortOrder;\n",
+  "rows": [
+    {
+      "id": "1",
+      "slug": "free",
+      "name": "Free",
+      "taskLimit": "10",
+      "teamMemberLimit": "1",
+      "features": "[\"basic_templates\",\"upload\",\"download\"]",
+      "isActive": "0",
+      "isDefault": "0"
+    },
+    {
+      "id": "2",
+      "slug": "starter",
+      "name": "Starter",
+      "taskLimit": "100",
+      "teamMemberLimit": "5",
+      "features": "[\"basic_templates\",\"upload\",\"download\",\"export_pdf\",\"masking\"]",
+      "isActive": "1",
+      "isDefault": "1"
+    },
+    {
+      "id": "3",
+      "slug": "business",
+      "name": "Business",
+      "taskLimit": "500",
+      "teamMemberLimit": "20",
+      "features": "[\"basic_templates\",\"upload\",\"download\",\"export_pdf\",\"template_sharing\",\"monitoring\",\"team_management\",\"priority_support\",\"masking\"]",
+      "isActive": "1",
+      "isDefault": "0"
+    },
+    {
+      "id": "4",
+      "slug": "enterprise",
+      "name": "Enterprise",
+      "taskLimit": "0",
+      "teamMemberLimit": "50",
+      "features": "[\"basic_templates\",\"upload\",\"download\",\"export_pdf\",\"template_sharing\",\"monitoring\",\"team_management\",\"priority_support\",\"masking\",\"custom_branding\",\"api_access\",\"sso\",\"dedicated_support\"]",
+      "isActive": "1",
+      "isDefault": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tslug\tname\ttaskLimit\tteamMemberLimit\tfeatures\tisActive\tisDefault\n1\tfree\tFree\t10\t1\t[\"basic_templates\",\"upload\",\"download\"]\t0\t0\n2\tstarter\tStarter\t100\t5\t[\"basic_templates\",\"upload\",\"download\",\"export_pdf\",\"masking\"]\t1\t1\n3\tbusiness\tBusiness\t500\t20\t[\"basic_templates\",\"upload\",\"download\",\"export_pdf\",\"template_sharing\",\"monitoring\",\"team_management\",\"priority_support\",\"masking\"]\t1\t0\n4\tenterprise\tEnterprise\t0\t50\t[\"basic_templates\",\"upload\",\"download\",\"export_pdf\",\"template_sharing\",\"monitoring\",\"team_management\",\"priority_support\",\"masking\",\"custom_branding\",\"api_access\",\"sso\",\"dedicated_support\"]\t1\t0\n",
+  "stderr": "",
+  "execution_time_ms": 86
+}

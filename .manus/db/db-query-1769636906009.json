@@ -1,0 +1,15 @@
+{
+  "query": "SELECT id, slug, name FROM taskTemplates WHERE slug LIKE '%bilanz%' OR name LIKE '%Bilanz%' LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute SELECT id, slug, name FROM taskTemplates WHERE slug LIKE '%bilanz%' OR name LIKE '%Bilanz%' LIMIT 10;",
+  "rows": [
+    {
+      "id": "150078",
+      "slug": "monats_zwischenbilanz_pruefen",
+      "name": "monats_zwischenbilanz_pruefen"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tslug\tname\n150078\tmonats_zwischenbilanz_pruefen\tmonats_zwischenbilanz_pruefen\n",
+  "stderr": "",
+  "execution_time_ms": 58
+}

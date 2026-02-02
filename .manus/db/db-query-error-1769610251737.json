@@ -1,0 +1,8 @@
+{
+  "query": "INSERT INTO organizationSubscriptions (organizationId, planId, status, validUntil, creditsRemaining, creditsUsed)\nVALUES (90001, NULL, 'trial', DATE_ADD(NOW(), INTERVAL 90 DAY), 1000, 0);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute INSERT INTO organizationSubscriptions (organizationId, planId, status, validUntil, creditsRemaining, creditsUsed)\nVALUES (90001, NULL, 'trial', DATE_ADD(NOW(), INTERVAL 90 DAY), 1000, 0);",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 1: Unknown column 'status' in 'field list'"
+  ]
+}

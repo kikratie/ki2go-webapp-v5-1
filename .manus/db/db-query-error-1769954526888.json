@@ -1,0 +1,8 @@
+{
+  "query": "SELECT u.id, u.email, u.name, u.role, u.organizationId, o.name as orgName, om.role as memberRole\nFROM users u\nLEFT JOIN organizations o ON u.organizationId = o.id\nLEFT JOIN organizationMembers om ON u.id = om.userId AND u.organizationId = om.organizationId\nWHERE u.email LIKE '%proagentur%' OR u.email LIKE '%niaghi%'\nLIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute SELECT u.id, u.email, u.name, u.role, u.organizationId, o.name as orgName, om.role as memberRole\nFROM users u\nLEFT JOIN organizations o ON u.organizationId = o.id\nLEFT JOIN organizationMembers om ON u.id = om.userId AND u.organizationId = om.organizationId\nWHERE u.email LIKE '%proagentur%' OR u.email LIKE '%niaghi%'\nLIMIT 10;",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 1: Unknown column 'om.role' in 'field list'"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "query": "SELECT \n  id, \n  uniqueId, \n  title, \n  templateStatus,\n  isPublic,\n  documentRequired,\n  LENGTH(superpromptContent) as superprompt_length,\n  LENGTH(variablesSchema) as variables_length,\n  SUBSTRING(superpromptContent, 1, 200) as superprompt_preview,\n  SUBSTRING(variablesSchema, 1, 500) as variables_preview\nFROM taskTemplates \nWHERE uniqueId IN ('SP-2026-001', 'SP-2026-003', 'SP-2026-004', 'SP-2026-006', 'SP-2026-007')\n   OR title = 'Vertrag prüfen'\nORDER BY uniqueId;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute SELECT \n  id, \n  uniqueId, \n  title, \n  templateStatus,\n  isPublic,\n  documentRequired,\n  LENGTH(superpromptContent) as superprompt_length,\n  LENGTH(variablesSchema) as variables_length,\n  SUBSTRING(superpromptContent, 1, 200) as superprompt_preview,\n  SUBSTRING(variablesSchema, 1, 500) as variables_preview\nFROM taskTemplates \nWHERE uniqueId IN ('SP-2026-001', 'SP-2026-003', 'SP-2026-004', 'SP-2026-006', 'SP-2026-007')\n   OR title = 'Vertrag prüfen'\nORDER BY uniqueId;",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 1: Unknown column 'superpromptcontent' in 'field list'"
+  ]
+}

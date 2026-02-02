@@ -1,0 +1,40 @@
+{
+  "query": "SELECT id, name, baseTemplateId, sourceTemplateUniqueId FROM customSuperprompts LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute SELECT id, name, baseTemplateId, sourceTemplateUniqueId FROM customSuperprompts LIMIT 5;",
+  "rows": [
+    {
+      "id": "1",
+      "name": "Test Workflow",
+      "baseTemplateId": "150213",
+      "sourceTemplateUniqueId": "NULL"
+    },
+    {
+      "id": "2",
+      "name": "Test Workflow",
+      "baseTemplateId": "150215",
+      "sourceTemplateUniqueId": "NULL"
+    },
+    {
+      "id": "3",
+      "name": "Test Workflow",
+      "baseTemplateId": "150216",
+      "sourceTemplateUniqueId": "NULL"
+    },
+    {
+      "id": "4",
+      "name": "Test Workflow",
+      "baseTemplateId": "150217",
+      "sourceTemplateUniqueId": "NULL"
+    },
+    {
+      "id": "5",
+      "name": "Test Workflow",
+      "baseTemplateId": "150218",
+      "sourceTemplateUniqueId": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\tbaseTemplateId\tsourceTemplateUniqueId\n1\tTest Workflow\t150213\tNULL\n2\tTest Workflow\t150215\tNULL\n3\tTest Workflow\t150216\tNULL\n4\tTest Workflow\t150217\tNULL\n5\tTest Workflow\t150218\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 54
+}

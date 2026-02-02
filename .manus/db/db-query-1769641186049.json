@@ -1,0 +1,9 @@
+{
+  "query": "ALTER TABLE `taskTemplates` ADD COLUMN IF NOT EXISTS `marketingEnabled` int DEFAULT 0;\nALTER TABLE `taskTemplates` ADD COLUMN IF NOT EXISTS `marketingHeadline` varchar(100);\nALTER TABLE `taskTemplates` ADD COLUMN IF NOT EXISTS `marketingSubheadline` varchar(200);\nALTER TABLE `taskTemplates` ADD COLUMN IF NOT EXISTS `marketingUsps` json;\nALTER TABLE `taskTemplates` ADD COLUMN IF NOT EXISTS `marketingCtaText` varchar(50);\nALTER TABLE `taskTemplates` ADD COLUMN IF NOT EXISTS `marketingMetaDescription` varchar(160);\nALTER TABLE `taskTemplates` ADD COLUMN IF NOT EXISTS `marketingKeywords` json;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute ALTER TABLE `taskTemplates` ADD COLUMN IF NOT EXISTS `marketingEnabled` int DEFAULT 0;\nALTER TABLE `taskTemplates` ADD COLUMN IF NOT EXISTS `marketingHeadline` varchar(100);\nALTER TABLE `taskTemplates` ADD COLUMN IF NOT EXISTS `marketingSubheadline` varchar(200);\nALTER TABLE `taskTemplates` ADD COLUMN IF NOT EXISTS `marketingUsps` json;\nALTER TABLE `taskTemplates` ADD COLUMN IF NOT EXISTS `marketingCtaText` varchar(50);\nALTER TABLE `taskTemplates` ADD COLUMN IF NOT EXISTS `marketingMetaDescription` varchar(160);\nALTER TABLE `taskTemplates` ADD COLUMN IF NOT EXISTS `marketingKeywords` json;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 2838
+}

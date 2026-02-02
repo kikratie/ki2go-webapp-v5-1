@@ -1,0 +1,8 @@
+{
+  "query": "ALTER TABLE customSuperprompts \nADD COLUMN slug VARCHAR(255),\nADD COLUMN title VARCHAR(255),\nADD COLUMN shortDescription VARCHAR(500);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute ALTER TABLE customSuperprompts \nADD COLUMN slug VARCHAR(255),\nADD COLUMN title VARCHAR(255),\nADD COLUMN shortDescription VARCHAR(500);",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1060 (42S21) at line 1: Duplicate column name 'slug'"
+  ]
+}

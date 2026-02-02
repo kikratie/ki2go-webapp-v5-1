@@ -1,0 +1,98 @@
+{
+  "query": "SELECT \n  id, \n  uniqueId, \n  title, \n  templateStatus,\n  isPublic,\n  documentRequired,\n  LENGTH(superprompt) as superprompt_length,\n  LENGTH(variableSchema) as variables_length,\n  SUBSTRING(superprompt, 1, 300) as superprompt_preview\nFROM taskTemplates \nWHERE uniqueId IN ('SP-2026-001', 'SP-2026-003', 'SP-2026-004', 'SP-2026-006', 'SP-2026-007')\n   OR title = 'Vertrag prüfen'\nORDER BY uniqueId;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute SELECT \n  id, \n  uniqueId, \n  title, \n  templateStatus,\n  isPublic,\n  documentRequired,\n  LENGTH(superprompt) as superprompt_length,\n  LENGTH(variableSchema) as variables_length,\n  SUBSTRING(superprompt, 1, 300) as superprompt_preview\nFROM taskTemplates \nWHERE uniqueId IN ('SP-2026-001', 'SP-2026-003', 'SP-2026-004', 'SP-2026-006', 'SP-2026-007')\n   OR title = 'Vertrag prüfen'\nORDER BY uniqueId;",
+  "rows": [
+    {
+      "id": "150101",
+      "uniqueId": "NULL",
+      "title": "Vertrag prüfen",
+      "templateStatus": "active",
+      "isPublic": "1",
+      "documentRequired": "1",
+      "superprompt_length": "1041",
+      "variables_length": "1166",
+      "superprompt_preview": "Du bist ein erfahrener Rechtsexperte mit Spezialisierung auf Vertragsrecht im deutschsprachigen Raum."
+    },
+    {
+      "id": "4",
+      "uniqueId": "SP-2026-001",
+      "title": "Vertrags Analyse",
+      "templateStatus": "active",
+      "isPublic": "1",
+      "documentRequired": "1",
+      "superprompt_length": "4018",
+      "variables_length": "3130",
+      "superprompt_preview": "Kategorie: Vertragsanalyse"
+    },
+    {
+      "id": "150078",
+      "uniqueId": "SP-2026-003",
+      "title": "Bilanz Monat prüfen ",
+      "templateStatus": "active",
+      "isPublic": "1",
+      "documentRequired": "0",
+      "superprompt_length": "3584",
+      "variables_length": "1652",
+      "superprompt_preview": "ROLE"
+    },
+    {
+      "id": "150185",
+      "uniqueId": "SP-2026-004",
+      "title": "Vertragsanalyse 2",
+      "templateStatus": "draft",
+      "isPublic": "1",
+      "documentRequired": "0",
+      "superprompt_length": "6781",
+      "variables_length": "1925",
+      "superprompt_preview": "START DER KI2GO-PROMPT-ARCHITEKTUR"
+    },
+    {
+      "id": "240013",
+      "uniqueId": "SP-2026-006",
+      "title": "CV Analyse und Bewertung",
+      "templateStatus": "active",
+      "isPublic": "1",
+      "documentRequired": "0",
+      "superprompt_length": "2816",
+      "variables_length": "2181",
+      "superprompt_preview": "# Lebenslauf-Analyse und Eignungsbewertung"
+    },
+    {
+      "id": "240014",
+      "uniqueId": "SP-2026-007",
+      "title": "Stellenanzeigen psychologisch optimieren",
+      "templateStatus": "active",
+      "isPublic": "1",
+      "documentRequired": "0",
+      "superprompt_length": "3049",
+      "variables_length": "1766",
+      "superprompt_preview": "# STELLENANZEIGEN-OPTIMIERUNG FÜR PSYCHOLOGISCHE WIRKUNG}}"
+    }
+  ],
+  "messages": [
+    "## Aufgabe",
+    "Analysiere den folgenden {{VERTRAGSTYP}} aus der Perspektive des {{ROLLE}}.",
+    "## Dokument",
+    "{{DOKUMENT}}",
+    "## Besonderer Fokus",
+    "{{FOKUS}}",
+    "## Analyse-Struktur",
+    "### 1. Zusammenfassung",
+    "- Vertra",
+    "Anwendungsfall: Juristische und wirtschaftliche Prüfung von Verträgen",
+    "BENUTZER-EINGABE FÜR DEN ANWENDUNGSFALL",
+    "{{ANWENDUNGSFALL_BESCHREIBUNG_DURCH_DEN_USER}}",
+    "ALLE ERFORDERLICHEN USER INPUT VARIABLEN FÜR DIE OPTIMALE FUNKTION DES SUPERPROMPTS",
+    "{{VERTRAGSTYP}}",
+    "[VERTRAGSTEXT_",
+    "Du agierst als \"Senior Financial Strategist & Corporate Auditor\". Deine Spezialität ist es, komplexe monatliche Zwischenbilanzen und GuVs für Nicht-Finanzexperten (CEOs, Projektleiter) so aufzubereiten, dass sie sofort verstehen, wo das Unternehmen finanziell steht und welche Maßnahmen sofort e",
+    "Du handelst als hochspezialisierter Senior Legal Engineer und Fachanwalt für Vertragsrecht. Deine Expertise liegt in der präzisen Extraktion von Vertragsdaten, der Identifikation versteckter Risiken und der Bewertung von Klauseln gegen Marktstandards. Du arbeitest ",
+    "## Deine Rolle",
+    "Du bist ein erfahrener **Talent Acquisition Specialist (Recruiter)** mit umfassender Expertise in **strukturierten Bewerber-Screenings und Eignungsdiagnostik**. Du arbeitest präzise, strukturiert und lieferst praxisnahe Ergebnisse zur optima",
+    "## Deine Rolle",
+    "Du bist ein erfahrener **HR-Marketing-Psychologe** mit umfassender Expertise in **Conversion-Optimierung von Stellenausschreibungen und psychologischer Zielgruppenansprache (Recruitment Marketing)**. Du arbeitest präzise, str"
+  ],
+  "stdout": "id\tuniqueId\ttitle\ttemplateStatus\tisPublic\tdocumentRequired\tsuperprompt_length\tvariables_length\tsuperprompt_preview\n150101\tNULL\tVertrag prüfen\tactive\t1\t1\t1041\t1166\tDu bist ein erfahrener Rechtsexperte mit Spezialisierung auf Vertragsrecht im deutschsprachigen Raum.\n\n## Aufgabe\nAnalysiere den folgenden {{VERTRAGSTYP}} aus der Perspektive des {{ROLLE}}.\n\n## Dokument\n{{DOKUMENT}}\n\n## Besonderer Fokus\n{{FOKUS}}\n\n## Analyse-Struktur\n\n### 1. Zusammenfassung\n- Vertra\n4\tSP-2026-001\tVertrags Analyse\tactive\t1\t1\t4018\t3130\tKategorie: Vertragsanalyse\nAnwendungsfall: Juristische und wirtschaftliche Prüfung von Verträgen\n\nBENUTZER-EINGABE FÜR DEN ANWENDUNGSFALL\n{{ANWENDUNGSFALL_BESCHREIBUNG_DURCH_DEN_USER}}\n\nALLE ERFORDERLICHEN USER INPUT VARIABLEN FÜR DIE OPTIMALE FUNKTION DES SUPERPROMPTS\n{{VERTRAGSTYP}}\n[VERTRAGSTEXT_\n150078\tSP-2026-003\tBilanz Monat prüfen \tactive\t1\t0\t3584\t1652\tROLE\nDu agierst als \"Senior Financial Strategist & Corporate Auditor\". Deine Spezialität ist es, komplexe monatliche Zwischenbilanzen und GuVs für Nicht-Finanzexperten (CEOs, Projektleiter) so aufzubereiten, dass sie sofort verstehen, wo das Unternehmen finanziell steht und welche Maßnahmen sofort e\n150185\tSP-2026-004\tVertragsanalyse 2\tdraft\t1\t0\t6781\t1925\tSTART DER KI2GO-PROMPT-ARCHITEKTUR\nDu handelst als hochspezialisierter Senior Legal Engineer und Fachanwalt für Vertragsrecht. Deine Expertise liegt in der präzisen Extraktion von Vertragsdaten, der Identifikation versteckter Risiken und der Bewertung von Klauseln gegen Marktstandards. Du arbeitest \n240013\tSP-2026-006\tCV Analyse und Bewertung\tactive\t1\t0\t2816\t2181\t# Lebenslauf-Analyse und Eignungsbewertung\n\n## Deine Rolle\nDu bist ein erfahrener **Talent Acquisition Specialist (Recruiter)** mit umfassender Expertise in **strukturierten Bewerber-Screenings und Eignungsdiagnostik**. Du arbeitest präzise, strukturiert und lieferst praxisnahe Ergebnisse zur optima\n240014\tSP-2026-007\tStellenanzeigen psychologisch optimieren\tactive\t1\t0\t3049\t1766\t# STELLENANZEIGEN-OPTIMIERUNG FÜR PSYCHOLOGISCHE WIRKUNG}}\n\n## Deine Rolle\nDu bist ein erfahrener **HR-Marketing-Psychologe** mit umfassender Expertise in **Conversion-Optimierung von Stellenausschreibungen und psychologischer Zielgruppenansprache (Recruitment Marketing)**. Du arbeitest präzise, str\n",
+  "stderr": "",
+  "execution_time_ms": 65
+}

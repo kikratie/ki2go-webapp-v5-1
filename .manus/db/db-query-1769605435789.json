@@ -1,0 +1,115 @@
+{
+  "query": "SELECT table_name FROM information_schema.tables WHERE table_schema = DATABASE() ORDER BY table_name;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute SELECT table_name FROM information_schema.tables WHERE table_schema = DATABASE() ORDER BY table_name;",
+  "rows": [
+    {
+      "table_name": "__drizzle_migrations"
+    },
+    {
+      "table_name": "adminAuditLog"
+    },
+    {
+      "table_name": "adminLogs"
+    },
+    {
+      "table_name": "analyticsEvents"
+    },
+    {
+      "table_name": "businessAreas"
+    },
+    {
+      "table_name": "categories"
+    },
+    {
+      "table_name": "costSummary"
+    },
+    {
+      "table_name": "creditTransactions"
+    },
+    {
+      "table_name": "documentUsage"
+    },
+    {
+      "table_name": "documents"
+    },
+    {
+      "table_name": "fallbackSuggestions"
+    },
+    {
+      "table_name": "llmUsage"
+    },
+    {
+      "table_name": "metapromptTemplates"
+    },
+    {
+      "table_name": "organizationInvitations"
+    },
+    {
+      "table_name": "organizationMembers"
+    },
+    {
+      "table_name": "organizationSubscriptions"
+    },
+    {
+      "table_name": "organizationTemplates"
+    },
+    {
+      "table_name": "organizations"
+    },
+    {
+      "table_name": "processAuditLog"
+    },
+    {
+      "table_name": "realtimeStatsCache"
+    },
+    {
+      "table_name": "researchClusters"
+    },
+    {
+      "table_name": "researchQueries"
+    },
+    {
+      "table_name": "subscriptionPlans"
+    },
+    {
+      "table_name": "superpromptCollection"
+    },
+    {
+      "table_name": "superpromptFeedback"
+    },
+    {
+      "table_name": "superpromptVersions"
+    },
+    {
+      "table_name": "systemSettings"
+    },
+    {
+      "table_name": "taskRequests"
+    },
+    {
+      "table_name": "taskTemplates"
+    },
+    {
+      "table_name": "teams"
+    },
+    {
+      "table_name": "users"
+    },
+    {
+      "table_name": "variableFeedback"
+    },
+    {
+      "table_name": "workflowExecutions"
+    },
+    {
+      "table_name": "workflowFeedback"
+    },
+    {
+      "table_name": "workflowProtocols"
+    }
+  ],
+  "messages": [],
+  "stdout": "table_name\n__drizzle_migrations\nadminAuditLog\nadminLogs\nanalyticsEvents\nbusinessAreas\ncategories\ncostSummary\ncreditTransactions\ndocumentUsage\ndocuments\nfallbackSuggestions\nllmUsage\nmetapromptTemplates\norganizationInvitations\norganizationMembers\norganizationSubscriptions\norganizationTemplates\norganizations\nprocessAuditLog\nrealtimeStatsCache\nresearchClusters\nresearchQueries\nsubscriptionPlans\nsuperpromptCollection\nsuperpromptFeedback\nsuperpromptVersions\nsystemSettings\ntaskRequests\ntaskTemplates\nteams\nusers\nvariableFeedback\nworkflowExecutions\nworkflowFeedback\nworkflowProtocols\n",
+  "stderr": "",
+  "execution_time_ms": 353
+}

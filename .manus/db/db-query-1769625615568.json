@@ -1,0 +1,121 @@
+{
+  "query": "SHOW TABLES;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute SHOW TABLES;",
+  "rows": [
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "__drizzle_migrations"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "adminAuditLog"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "adminLogs"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "analyticsEvents"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "businessAreas"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "categories"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "costSummary"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "creditTransactions"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "customSuperpromptHistory"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "customSuperprompts"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "documentUsage"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "documents"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "fallbackSuggestions"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "llmUsage"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "metapromptTemplates"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "organizationInvitations"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "organizationMembers"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "organizationSubscriptions"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "organizationTemplates"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "organizations"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "processAuditLog"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "realtimeStatsCache"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "researchClusters"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "researchQueries"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "subscriptionPlans"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "superpromptCollection"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "superpromptFeedback"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "superpromptVersions"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "systemSettings"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "taskRequests"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "taskTemplates"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "teams"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "users"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "variableFeedback"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "workflowExecutions"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "workflowFeedback"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf": "workflowProtocols"
+    }
+  ],
+  "messages": [],
+  "stdout": "Tables_in_Qtfyr7BgTHqDyUMajEnzSf\n__drizzle_migrations\nadminAuditLog\nadminLogs\nanalyticsEvents\nbusinessAreas\ncategories\ncostSummary\ncreditTransactions\ncustomSuperpromptHistory\ncustomSuperprompts\ndocumentUsage\ndocuments\nfallbackSuggestions\nllmUsage\nmetapromptTemplates\norganizationInvitations\norganizationMembers\norganizationSubscriptions\norganizationTemplates\norganizations\nprocessAuditLog\nrealtimeStatsCache\nresearchClusters\nresearchQueries\nsubscriptionPlans\nsuperpromptCollection\nsuperpromptFeedback\nsuperpromptVersions\nsystemSettings\ntaskRequests\ntaskTemplates\nteams\nusers\nvariableFeedback\nworkflowExecutions\nworkflowFeedback\nworkflowProtocols\n",
+  "stderr": "",
+  "execution_time_ms": 62
+}

@@ -1,0 +1,9 @@
+{
+  "query": "ALTER TABLE metapromptTemplates \nADD COLUMN createdByName VARCHAR(255),\nADD COLUMN lastModifiedByName VARCHAR(255),\nADD COLUMN versionLabel VARCHAR(20) DEFAULT '1.0',\nADD COLUMN changeLog TEXT;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute ALTER TABLE metapromptTemplates \nADD COLUMN createdByName VARCHAR(255),\nADD COLUMN lastModifiedByName VARCHAR(255),\nADD COLUMN versionLabel VARCHAR(20) DEFAULT '1.0',\nADD COLUMN changeLog TEXT;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1255
+}

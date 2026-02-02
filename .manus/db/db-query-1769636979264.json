@@ -1,0 +1,80 @@
+{
+  "query": "SELECT id, name, slug FROM organizations;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute SELECT id, name, slug FROM organizations;",
+  "rows": [
+    {
+      "id": "1",
+      "name": "Test Organisation",
+      "slug": "test-org-1769550002803"
+    },
+    {
+      "id": "2",
+      "name": "Test Organisation",
+      "slug": "test-org-1769550002944"
+    },
+    {
+      "id": "3",
+      "name": "Test Organisation",
+      "slug": "test-org-1769550002964"
+    },
+    {
+      "id": "4",
+      "name": "Test Organisation",
+      "slug": "test-org-1769550002980"
+    },
+    {
+      "id": "5",
+      "name": "Test Organisation",
+      "slug": "test-org-1769550002995"
+    },
+    {
+      "id": "6",
+      "name": "Test Organisation",
+      "slug": "test-org-1769550003013"
+    },
+    {
+      "id": "7",
+      "name": "Test Organisation",
+      "slug": "test-org-1769550003028"
+    },
+    {
+      "id": "8",
+      "name": "Test Organisation",
+      "slug": "test-org-1769550003044"
+    },
+    {
+      "id": "9",
+      "name": "Test Organisation",
+      "slug": "test-org-1769550003061"
+    },
+    {
+      "id": "10",
+      "name": "Test Organisation",
+      "slug": "test-org-1769550003077"
+    },
+    {
+      "id": "11",
+      "name": "Test Organisation",
+      "slug": "test-org-1769550003099"
+    },
+    {
+      "id": "90001",
+      "name": "KI2GO Testpartner",
+      "slug": "ki2go-testpartner"
+    },
+    {
+      "id": "90033",
+      "name": "Test Organisation",
+      "slug": "test-org-1769612692658"
+    },
+    {
+      "id": "120001",
+      "name": "Proagentur GmBH",
+      "slug": "proagentur-gmbh"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\tslug\n1\tTest Organisation\ttest-org-1769550002803\n2\tTest Organisation\ttest-org-1769550002944\n3\tTest Organisation\ttest-org-1769550002964\n4\tTest Organisation\ttest-org-1769550002980\n5\tTest Organisation\ttest-org-1769550002995\n6\tTest Organisation\ttest-org-1769550003013\n7\tTest Organisation\ttest-org-1769550003028\n8\tTest Organisation\ttest-org-1769550003044\n9\tTest Organisation\ttest-org-1769550003061\n10\tTest Organisation\ttest-org-1769550003077\n11\tTest Organisation\ttest-org-1769550003099\n90001\tKI2GO Testpartner\tki2go-testpartner\n90033\tTest Organisation\ttest-org-1769612692658\n120001\tProagentur GmBH\tproagentur-gmbh\n",
+  "stderr": "",
+  "execution_time_ms": 51
+}

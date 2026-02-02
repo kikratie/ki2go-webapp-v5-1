@@ -1,0 +1,66 @@
+{
+  "query": "SELECT id, slug, name, taskLimit, customTemplateLimit, storageLimit, teamMemberLimit, features, priceMonthly, priceYearly, isActive, isDefault FROM plans ORDER BY sortOrder;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute SELECT id, slug, name, taskLimit, customTemplateLimit, storageLimit, teamMemberLimit, features, priceMonthly, priceYearly, isActive, isDefault FROM plans ORDER BY sortOrder;",
+  "rows": [
+    {
+      "id": "1",
+      "slug": "free",
+      "name": "Free",
+      "taskLimit": "10",
+      "customTemplateLimit": "2",
+      "storageLimit": "100",
+      "teamMemberLimit": "1",
+      "features": "[\"basic_templates\",\"upload\",\"download\"]",
+      "priceMonthly": "0.00",
+      "priceYearly": "0.00",
+      "isActive": "1",
+      "isDefault": "1"
+    },
+    {
+      "id": "2",
+      "slug": "starter",
+      "name": "Starter",
+      "taskLimit": "50",
+      "customTemplateLimit": "10",
+      "storageLimit": "1024",
+      "teamMemberLimit": "1",
+      "features": "[\"basic_templates\",\"upload\",\"download\",\"export_pdf\"]",
+      "priceMonthly": "0.00",
+      "priceYearly": "0.00",
+      "isActive": "1",
+      "isDefault": "0"
+    },
+    {
+      "id": "3",
+      "slug": "business",
+      "name": "Business",
+      "taskLimit": "500",
+      "customTemplateLimit": "50",
+      "storageLimit": "10240",
+      "teamMemberLimit": "10",
+      "features": "[\"basic_templates\",\"upload\",\"download\",\"export_pdf\",\"template_sharing\",\"monitoring\",\"team_management\",\"priority_support\"]",
+      "priceMonthly": "0.00",
+      "priceYearly": "0.00",
+      "isActive": "1",
+      "isDefault": "0"
+    },
+    {
+      "id": "4",
+      "slug": "enterprise",
+      "name": "Enterprise",
+      "taskLimit": "0",
+      "customTemplateLimit": "0",
+      "storageLimit": "102400",
+      "teamMemberLimit": "50",
+      "features": "[\"basic_templates\",\"upload\",\"download\",\"export_pdf\",\"template_sharing\",\"monitoring\",\"team_management\",\"priority_support\",\"masking\",\"custom_branding\",\"api_access\",\"sso\",\"dedicated_support\"]",
+      "priceMonthly": "0.00",
+      "priceYearly": "0.00",
+      "isActive": "1",
+      "isDefault": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tslug\tname\ttaskLimit\tcustomTemplateLimit\tstorageLimit\tteamMemberLimit\tfeatures\tpriceMonthly\tpriceYearly\tisActive\tisDefault\n1\tfree\tFree\t10\t2\t100\t1\t[\"basic_templates\",\"upload\",\"download\"]\t0.00\t0.00\t1\t1\n2\tstarter\tStarter\t50\t10\t1024\t1\t[\"basic_templates\",\"upload\",\"download\",\"export_pdf\"]\t0.00\t0.00\t1\t0\n3\tbusiness\tBusiness\t500\t50\t10240\t10\t[\"basic_templates\",\"upload\",\"download\",\"export_pdf\",\"template_sharing\",\"monitoring\",\"team_management\",\"priority_support\"]\t0.00\t0.00\t1\t0\n4\tenterprise\tEnterprise\t0\t0\t102400\t50\t[\"basic_templates\",\"upload\",\"download\",\"export_pdf\",\"template_sharing\",\"monitoring\",\"team_management\",\"priority_support\",\"masking\",\"custom_branding\",\"api_access\",\"sso\",\"dedicated_support\"]\t0.00\t0.00\t1\t0\n",
+  "stderr": "",
+  "execution_time_ms": 1050
+}

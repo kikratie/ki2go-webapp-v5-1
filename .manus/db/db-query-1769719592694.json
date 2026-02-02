@@ -1,0 +1,90 @@
+{
+  "query": "SELECT cs.id, cs.uniqueId, cs.baseTemplateId, cs.organizationId, cs.version, o.customerNumber\nFROM customSuperprompts cs\nLEFT JOIN organizations o ON cs.organizationId = o.id\nLIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute SELECT cs.id, cs.uniqueId, cs.baseTemplateId, cs.organizationId, cs.version, o.customerNumber\nFROM customSuperprompts cs\nLEFT JOIN organizations o ON cs.organizationId = o.id\nLIMIT 10;",
+  "rows": [
+    {
+      "id": "1",
+      "uniqueId": "NULL",
+      "baseTemplateId": "150213",
+      "organizationId": "NULL",
+      "version": "1",
+      "customerNumber": "NULL"
+    },
+    {
+      "id": "2",
+      "uniqueId": "NULL",
+      "baseTemplateId": "150215",
+      "organizationId": "NULL",
+      "version": "1",
+      "customerNumber": "NULL"
+    },
+    {
+      "id": "3",
+      "uniqueId": "NULL",
+      "baseTemplateId": "150216",
+      "organizationId": "NULL",
+      "version": "1",
+      "customerNumber": "NULL"
+    },
+    {
+      "id": "4",
+      "uniqueId": "NULL",
+      "baseTemplateId": "150217",
+      "organizationId": "NULL",
+      "version": "1",
+      "customerNumber": "NULL"
+    },
+    {
+      "id": "5",
+      "uniqueId": "NULL",
+      "baseTemplateId": "150218",
+      "organizationId": "NULL",
+      "version": "1",
+      "customerNumber": "NULL"
+    },
+    {
+      "id": "6",
+      "uniqueId": "NULL",
+      "baseTemplateId": "150219",
+      "organizationId": "NULL",
+      "version": "1",
+      "customerNumber": "NULL"
+    },
+    {
+      "id": "7",
+      "uniqueId": "NULL",
+      "baseTemplateId": "150225",
+      "organizationId": "NULL",
+      "version": "1",
+      "customerNumber": "NULL"
+    },
+    {
+      "id": "8",
+      "uniqueId": "NULL",
+      "baseTemplateId": "150227",
+      "organizationId": "NULL",
+      "version": "1",
+      "customerNumber": "NULL"
+    },
+    {
+      "id": "9",
+      "uniqueId": "NULL",
+      "baseTemplateId": "150228",
+      "organizationId": "NULL",
+      "version": "1",
+      "customerNumber": "NULL"
+    },
+    {
+      "id": "10",
+      "uniqueId": "NULL",
+      "baseTemplateId": "150229",
+      "organizationId": "NULL",
+      "version": "1",
+      "customerNumber": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tuniqueId\tbaseTemplateId\torganizationId\tversion\tcustomerNumber\n1\tNULL\t150213\tNULL\t1\tNULL\n2\tNULL\t150215\tNULL\t1\tNULL\n3\tNULL\t150216\tNULL\t1\tNULL\n4\tNULL\t150217\tNULL\t1\tNULL\n5\tNULL\t150218\tNULL\t1\tNULL\n6\tNULL\t150219\tNULL\t1\tNULL\n7\tNULL\t150225\tNULL\t1\tNULL\n8\tNULL\t150227\tNULL\t1\tNULL\n9\tNULL\t150228\tNULL\t1\tNULL\n10\tNULL\t150229\tNULL\t1\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 50
+}

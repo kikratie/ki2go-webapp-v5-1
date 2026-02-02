@@ -1,0 +1,24 @@
+{
+  "query": "SELECT id, name, email, role, organizationId FROM users WHERE email LIKE '%niaghi%' OR email LIKE '%proagentur%';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute SELECT id, name, email, role, organizationId FROM users WHERE email LIKE '%niaghi%' OR email LIKE '%proagentur%';",
+  "rows": [
+    {
+      "id": "1",
+      "name": "niaghi",
+      "email": "niaghi@winitec.at",
+      "role": "user",
+      "organizationId": "90001"
+    },
+    {
+      "id": "330080",
+      "name": "Niaghi",
+      "email": "Niaghi@proagentur.at",
+      "role": "user",
+      "organizationId": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\temail\trole\torganizationId\n1\tniaghi\tniaghi@winitec.at\tuser\t90001\n330080\tNiaghi\tNiaghi@proagentur.at\tuser\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 58
+}

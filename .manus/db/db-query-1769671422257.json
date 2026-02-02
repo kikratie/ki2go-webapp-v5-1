@@ -1,0 +1,80 @@
+{
+  "query": "SELECT id, fileName, mimeType, fileUrl, uploadedAt FROM documents ORDER BY uploadedAt DESC LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute SELECT id, fileName, mimeType, fileUrl, uploadedAt FROM documents ORDER BY uploadedAt DESC LIMIT 10;",
+  "rows": [
+    {
+      "id": "120001",
+      "fileName": "37-docs/1769671106744-42064ab0.pdf",
+      "mimeType": "application/pdf",
+      "fileUrl": "https://d2xsxph8kpxj0f.cloudfront.net/98946247/Qtfyr7BgTHqDyUMajEnzSf/37-docs/1769671106744-42064ab0.pdf",
+      "uploadedAt": "2026-01-29 07:18:27"
+    },
+    {
+      "id": "90001",
+      "fileName": "37-docs/1769628978442-b6f240f7.PDF",
+      "mimeType": "application/pdf",
+      "fileUrl": "https://d2xsxph8kpxj0f.cloudfront.net/98946247/Qtfyr7BgTHqDyUMajEnzSf/37-docs/1769628978442-b6f240f7.PDF",
+      "uploadedAt": "2026-01-28 19:36:19"
+    },
+    {
+      "id": "60001",
+      "fileName": "37-docs/1769612824649-636e7781.pdf",
+      "mimeType": "application/pdf",
+      "fileUrl": "https://d2xsxph8kpxj0f.cloudfront.net/98946247/Qtfyr7BgTHqDyUMajEnzSf/37-docs/1769612824649-636e7781.pdf",
+      "uploadedAt": "2026-01-28 15:07:06"
+    },
+    {
+      "id": "30003",
+      "fileName": "37-docs/1769607851032-8e5b85ff.pdf",
+      "mimeType": "application/pdf",
+      "fileUrl": "https://d2xsxph8kpxj0f.cloudfront.net/98946247/Qtfyr7BgTHqDyUMajEnzSf/37-docs/1769607851032-8e5b85ff.pdf",
+      "uploadedAt": "2026-01-28 13:44:12"
+    },
+    {
+      "id": "30002",
+      "fileName": "37-docs/1769607511023-1aac7a42.pdf",
+      "mimeType": "application/pdf",
+      "fileUrl": "https://d2xsxph8kpxj0f.cloudfront.net/98946247/Qtfyr7BgTHqDyUMajEnzSf/37-docs/1769607511023-1aac7a42.pdf",
+      "uploadedAt": "2026-01-28 13:38:31"
+    },
+    {
+      "id": "30001",
+      "fileName": "37-docs/1769607286551-75c0ea87.pdf",
+      "mimeType": "application/pdf",
+      "fileUrl": "https://d2xsxph8kpxj0f.cloudfront.net/98946247/Qtfyr7BgTHqDyUMajEnzSf/37-docs/1769607286551-75c0ea87.pdf",
+      "uploadedAt": "2026-01-28 13:34:46"
+    },
+    {
+      "id": "11",
+      "fileName": "37-docs/1769557576877-68731cc5.pdf",
+      "mimeType": "application/pdf",
+      "fileUrl": "https://d2xsxph8kpxj0f.cloudfront.net/98946247/Qtfyr7BgTHqDyUMajEnzSf/37-docs/1769557576877-68731cc5.pdf",
+      "uploadedAt": "2026-01-27 23:46:17"
+    },
+    {
+      "id": "10",
+      "fileName": "37-docs/1769557452316-132bb302.pdf",
+      "mimeType": "application/pdf",
+      "fileUrl": "https://d2xsxph8kpxj0f.cloudfront.net/98946247/Qtfyr7BgTHqDyUMajEnzSf/37-docs/1769557452316-132bb302.pdf",
+      "uploadedAt": "2026-01-27 23:44:12"
+    },
+    {
+      "id": "9",
+      "fileName": "37-docs/1769557008552-5791986d.pdf",
+      "mimeType": "application/pdf",
+      "fileUrl": "https://d2xsxph8kpxj0f.cloudfront.net/98946247/Qtfyr7BgTHqDyUMajEnzSf/37-docs/1769557008552-5791986d.pdf",
+      "uploadedAt": "2026-01-27 23:36:48"
+    },
+    {
+      "id": "8",
+      "fileName": "37-docs/1769556860896-163c06f0.pdf",
+      "mimeType": "application/pdf",
+      "fileUrl": "https://d2xsxph8kpxj0f.cloudfront.net/98946247/Qtfyr7BgTHqDyUMajEnzSf/37-docs/1769556860896-163c06f0.pdf",
+      "uploadedAt": "2026-01-27 23:34:21"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tfileName\tmimeType\tfileUrl\tuploadedAt\n120001\t37-docs/1769671106744-42064ab0.pdf\tapplication/pdf\thttps://d2xsxph8kpxj0f.cloudfront.net/98946247/Qtfyr7BgTHqDyUMajEnzSf/37-docs/1769671106744-42064ab0.pdf\t2026-01-29 07:18:27\n90001\t37-docs/1769628978442-b6f240f7.PDF\tapplication/pdf\thttps://d2xsxph8kpxj0f.cloudfront.net/98946247/Qtfyr7BgTHqDyUMajEnzSf/37-docs/1769628978442-b6f240f7.PDF\t2026-01-28 19:36:19\n60001\t37-docs/1769612824649-636e7781.pdf\tapplication/pdf\thttps://d2xsxph8kpxj0f.cloudfront.net/98946247/Qtfyr7BgTHqDyUMajEnzSf/37-docs/1769612824649-636e7781.pdf\t2026-01-28 15:07:06\n30003\t37-docs/1769607851032-8e5b85ff.pdf\tapplication/pdf\thttps://d2xsxph8kpxj0f.cloudfront.net/98946247/Qtfyr7BgTHqDyUMajEnzSf/37-docs/1769607851032-8e5b85ff.pdf\t2026-01-28 13:44:12\n30002\t37-docs/1769607511023-1aac7a42.pdf\tapplication/pdf\thttps://d2xsxph8kpxj0f.cloudfront.net/98946247/Qtfyr7BgTHqDyUMajEnzSf/37-docs/1769607511023-1aac7a42.pdf\t2026-01-28 13:38:31\n30001\t37-docs/1769607286551-75c0ea87.pdf\tapplication/pdf\thttps://d2xsxph8kpxj0f.cloudfront.net/98946247/Qtfyr7BgTHqDyUMajEnzSf/37-docs/1769607286551-75c0ea87.pdf\t2026-01-28 13:34:46\n11\t37-docs/1769557576877-68731cc5.pdf\tapplication/pdf\thttps://d2xsxph8kpxj0f.cloudfront.net/98946247/Qtfyr7BgTHqDyUMajEnzSf/37-docs/1769557576877-68731cc5.pdf\t2026-01-27 23:46:17\n10\t37-docs/1769557452316-132bb302.pdf\tapplication/pdf\thttps://d2xsxph8kpxj0f.cloudfront.net/98946247/Qtfyr7BgTHqDyUMajEnzSf/37-docs/1769557452316-132bb302.pdf\t2026-01-27 23:44:12\n9\t37-docs/1769557008552-5791986d.pdf\tapplication/pdf\thttps://d2xsxph8kpxj0f.cloudfront.net/98946247/Qtfyr7BgTHqDyUMajEnzSf/37-docs/1769557008552-5791986d.pdf\t2026-01-27 23:36:48\n8\t37-docs/1769556860896-163c06f0.pdf\tapplication/pdf\thttps://d2xsxph8kpxj0f.cloudfront.net/98946247/Qtfyr7BgTHqDyUMajEnzSf/37-docs/1769556860896-163c06f0.pdf\t2026-01-27 23:34:21\n",
+  "stderr": "",
+  "execution_time_ms": 92
+}

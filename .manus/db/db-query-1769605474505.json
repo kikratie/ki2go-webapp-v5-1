@@ -1,0 +1,40 @@
+{
+  "query": "SELECT id, openId, name, email, role, organizationId, DATE_FORMAT(lastSignedIn, '%Y-%m-%d %H:%i') as lastSignedIn, DATE_FORMAT(createdAt, '%Y-%m-%d %H:%i') as createdAt FROM users;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute SELECT id, openId, name, email, role, organizationId, DATE_FORMAT(lastSignedIn, '%Y-%m-%d %H:%i') as lastSignedIn, DATE_FORMAT(createdAt, '%Y-%m-%d %H:%i') as createdAt FROM users;",
+  "rows": [
+    {
+      "id": "1",
+      "openId": "cevg4uwiVJPBRP8XYjMR7v",
+      "name": "niaghi",
+      "email": "niaghi@winitec.at",
+      "role": "user",
+      "organizationId": "NULL",
+      "lastSignedIn": "2026-01-27 17:58",
+      "createdAt": "2026-01-27 12:10"
+    },
+    {
+      "id": "17",
+      "openId": "6eARCQtFxqjvEAH8oQ9c47",
+      "name": "josef",
+      "email": "josef@hicka.at",
+      "role": "user",
+      "organizationId": "NULL",
+      "lastSignedIn": "2026-01-28 13:02",
+      "createdAt": "2026-01-27 12:16"
+    },
+    {
+      "id": "37",
+      "openId": "7PhjtWJmuSPjPwiqcm2iSh",
+      "name": "Ki Kratie",
+      "email": "kikratie@gmail.com",
+      "role": "owner",
+      "organizationId": "NULL",
+      "lastSignedIn": "2026-01-28 10:21",
+      "createdAt": "2026-01-27 12:22"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\topenId\tname\temail\trole\torganizationId\tlastSignedIn\tcreatedAt\n1\tcevg4uwiVJPBRP8XYjMR7v\tniaghi\tniaghi@winitec.at\tuser\tNULL\t2026-01-27 17:58\t2026-01-27 12:10\n17\t6eARCQtFxqjvEAH8oQ9c47\tjosef\tjosef@hicka.at\tuser\tNULL\t2026-01-28 13:02\t2026-01-27 12:16\n37\t7PhjtWJmuSPjPwiqcm2iSh\tKi Kratie\tkikratie@gmail.com\towner\tNULL\t2026-01-28 10:21\t2026-01-27 12:22\n",
+  "stderr": "",
+  "execution_time_ms": 353
+}

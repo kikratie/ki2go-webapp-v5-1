@@ -1,0 +1,28 @@
+{
+  "query": "SELECT id, name, email, role FROM users ORDER BY id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute SELECT id, name, email, role FROM users ORDER BY id;",
+  "rows": [
+    {
+      "id": "1",
+      "name": "niaghi",
+      "email": "niaghi@winitec.at",
+      "role": "user"
+    },
+    {
+      "id": "17",
+      "name": "josef",
+      "email": "josef@hicka.at",
+      "role": "user"
+    },
+    {
+      "id": "37",
+      "name": "Ki Kratie",
+      "email": "kikratie@gmail.com",
+      "role": "owner"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\temail\trole\n1\tniaghi\tniaghi@winitec.at\tuser\n17\tjosef\tjosef@hicka.at\tuser\n37\tKi Kratie\tkikratie@gmail.com\towner\n",
+  "stderr": "",
+  "execution_time_ms": 61
+}

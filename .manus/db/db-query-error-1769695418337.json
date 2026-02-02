@@ -1,0 +1,8 @@
+{
+  "query": "SELECT 1 as test;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute SELECT 1 as test;",
+  "returncode": 1,
+  "logs": [
+    "ERROR 2003 (HY000): Can't connect to MySQL server on 'gateway02.us-east-1.prod.aws.tidbcloud.com:4000' (110)"
+  ]
+}

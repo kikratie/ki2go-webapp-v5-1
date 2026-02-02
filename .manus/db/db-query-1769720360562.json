@@ -1,0 +1,76 @@
+{
+  "query": "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'customSuperprompts' ORDER BY ORDINAL_POSITION;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'customSuperprompts' ORDER BY ORDINAL_POSITION;",
+  "rows": [
+    {
+      "COLUMN_NAME": "id"
+    },
+    {
+      "COLUMN_NAME": "baseTemplateId"
+    },
+    {
+      "COLUMN_NAME": "organizationId"
+    },
+    {
+      "COLUMN_NAME": "userId"
+    },
+    {
+      "COLUMN_NAME": "name"
+    },
+    {
+      "COLUMN_NAME": "description"
+    },
+    {
+      "COLUMN_NAME": "superprompt"
+    },
+    {
+      "COLUMN_NAME": "createdFromExecutionId"
+    },
+    {
+      "COLUMN_NAME": "createdBy"
+    },
+    {
+      "COLUMN_NAME": "version"
+    },
+    {
+      "COLUMN_NAME": "isActive"
+    },
+    {
+      "COLUMN_NAME": "usageCount"
+    },
+    {
+      "COLUMN_NAME": "lastUsedAt"
+    },
+    {
+      "COLUMN_NAME": "createdAt"
+    },
+    {
+      "COLUMN_NAME": "updatedAt"
+    },
+    {
+      "COLUMN_NAME": "roiBaseTimeMinutes"
+    },
+    {
+      "COLUMN_NAME": "roiTimePerDocumentMinutes"
+    },
+    {
+      "COLUMN_NAME": "roiKi2goTimeMinutes"
+    },
+    {
+      "COLUMN_NAME": "roiHourlyRate"
+    },
+    {
+      "COLUMN_NAME": "uniqueId"
+    },
+    {
+      "COLUMN_NAME": "sourceTemplateUniqueId"
+    },
+    {
+      "COLUMN_NAME": "status"
+    }
+  ],
+  "messages": [],
+  "stdout": "COLUMN_NAME\nid\nbaseTemplateId\norganizationId\nuserId\nname\ndescription\nsuperprompt\ncreatedFromExecutionId\ncreatedBy\nversion\nisActive\nusageCount\nlastUsedAt\ncreatedAt\nupdatedAt\nroiBaseTimeMinutes\nroiTimePerDocumentMinutes\nroiKi2goTimeMinutes\nroiHourlyRate\nuniqueId\nsourceTemplateUniqueId\nstatus\n",
+  "stderr": "",
+  "execution_time_ms": 75
+}

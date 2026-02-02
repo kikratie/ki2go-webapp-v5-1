@@ -1,0 +1,38 @@
+{
+  "query": "SELECT id, name, email, role, organizationId FROM users ORDER BY id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute SELECT id, name, email, role, organizationId FROM users ORDER BY id;",
+  "rows": [
+    {
+      "id": "1",
+      "name": "niaghi",
+      "email": "niaghi@winitec.at",
+      "role": "user",
+      "organizationId": "90001"
+    },
+    {
+      "id": "17",
+      "name": "josef",
+      "email": "josef@hicka.at",
+      "role": "user",
+      "organizationId": "90001"
+    },
+    {
+      "id": "37",
+      "name": "Ki Kratie",
+      "email": "kikratie@gmail.com",
+      "role": "owner",
+      "organizationId": "NULL"
+    },
+    {
+      "id": "330080",
+      "name": "Niaghi",
+      "email": "Niaghi@proagentur.at",
+      "role": "user",
+      "organizationId": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\temail\trole\torganizationId\n1\tniaghi\tniaghi@winitec.at\tuser\t90001\n17\tjosef\tjosef@hicka.at\tuser\t90001\n37\tKi Kratie\tkikratie@gmail.com\towner\tNULL\n330080\tNiaghi\tNiaghi@proagentur.at\tuser\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 51
+}

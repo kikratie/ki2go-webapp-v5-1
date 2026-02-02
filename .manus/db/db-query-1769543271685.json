@@ -1,0 +1,22 @@
+{
+  "query": "SELECT id, slug, title, LEFT(superprompt, 100) as superprompt_preview, createdBy, createdAt FROM taskTemplates ORDER BY id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute SELECT id, slug, title, LEFT(superprompt, 100) as superprompt_preview, createdBy, createdAt FROM taskTemplates ORDER BY id;",
+  "rows": [
+    {
+      "id": "1",
+      "slug": "vertrag-pruefen",
+      "title": "Vertrag prüfen",
+      "superprompt_preview": "Du bist ein erfahrener Rechtsexperte mit Spezialisierung auf Vertragsrecht im deutschsprachigen Raum",
+      "createdBy": "NULL",
+      "createdAt": "2026-01-27 19:05:57"
+    }
+  ],
+  "messages": [
+    "2\tanalyse_von_mietvertraegen_auf_risiken\tAnalyse von Mietverträgen auf Risiken\t# Analyse von Mietverträgen auf Risiken",
+    "## Deine Rolle",
+    "Du bist ein erfahrener **Rechtsberater für V\t37\t2026-01-27 19:43:05"
+  ],
+  "stdout": "id\tslug\ttitle\tsuperprompt_preview\tcreatedBy\tcreatedAt\n1\tvertrag-pruefen\tVertrag prüfen\tDu bist ein erfahrener Rechtsexperte mit Spezialisierung auf Vertragsrecht im deutschsprachigen Raum\tNULL\t2026-01-27 19:05:57\n2\tanalyse_von_mietvertraegen_auf_risiken\tAnalyse von Mietverträgen auf Risiken\t# Analyse von Mietverträgen auf Risiken\n\n## Deine Rolle\nDu bist ein erfahrener **Rechtsberater für V\t37\t2026-01-27 19:43:05\n",
+  "stderr": "",
+  "execution_time_ms": 55
+}

@@ -1,0 +1,418 @@
+{
+  "query": "DESCRIBE taskTemplates;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute DESCRIBE taskTemplates;",
+  "rows": [
+    {
+      "Field": "id",
+      "Type": "int(11)",
+      "Null": "NO",
+      "Key": "PRI",
+      "Default": "NULL",
+      "Extra": "auto_increment"
+    },
+    {
+      "Field": "slug",
+      "Type": "varchar(255)",
+      "Null": "NO",
+      "Key": "UNI",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "name",
+      "Type": "varchar(255)",
+      "Null": "NO",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "title",
+      "Type": "varchar(255)",
+      "Null": "NO",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "description",
+      "Type": "text",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "shortDescription",
+      "Type": "varchar(500)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "categoryId",
+      "Type": "int(11)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "businessAreaId",
+      "Type": "int(11)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "icon",
+      "Type": "varchar(100)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "FileText",
+      "Extra": ""
+    },
+    {
+      "Field": "color",
+      "Type": "varchar(20)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "variableSchema",
+      "Type": "json",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "superprompt",
+      "Type": "text",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "superpromptVersion",
+      "Type": "int(11)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "1",
+      "Extra": ""
+    },
+    {
+      "Field": "estimatedTimeSavings",
+      "Type": "int(11)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "creditCost",
+      "Type": "int(11)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "1",
+      "Extra": ""
+    },
+    {
+      "Field": "allowedFileTypes",
+      "Type": "json",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "maxFileSize",
+      "Type": "int(11)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "10485760",
+      "Extra": ""
+    },
+    {
+      "Field": "llmModel",
+      "Type": "varchar(100)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "llmTemperature",
+      "Type": "decimal(3,2)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "0.7",
+      "Extra": ""
+    },
+    {
+      "Field": "templateStatus",
+      "Type": "enum('draft','active','archived')",
+      "Null": "YES",
+      "Key": "",
+      "Default": "draft",
+      "Extra": ""
+    },
+    {
+      "Field": "displayOrder",
+      "Type": "int(11)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "0",
+      "Extra": ""
+    },
+    {
+      "Field": "isFeatured",
+      "Type": "int(11)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "0",
+      "Extra": ""
+    },
+    {
+      "Field": "usageCount",
+      "Type": "int(11)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "0",
+      "Extra": ""
+    },
+    {
+      "Field": "avgRating",
+      "Type": "decimal(3,2)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "createdBy",
+      "Type": "int(11)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "updatedBy",
+      "Type": "int(11)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "createdAt",
+      "Type": "timestamp",
+      "Null": "NO",
+      "Key": "",
+      "Default": "CURRENT_TIMESTAMP",
+      "Extra": ""
+    },
+    {
+      "Field": "updatedAt",
+      "Type": "timestamp",
+      "Null": "NO",
+      "Key": "",
+      "Default": "CURRENT_TIMESTAMP",
+      "Extra": "DEFAULT_GENERATED on update CURRENT_TIMESTAMP"
+    },
+    {
+      "Field": "maxTokens",
+      "Type": "int(11)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "outputFormat",
+      "Type": "enum('markdown','json','text','html')",
+      "Null": "YES",
+      "Key": "",
+      "Default": "markdown",
+      "Extra": ""
+    },
+    {
+      "Field": "exampleOutput",
+      "Type": "text",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "documentRequired",
+      "Type": "int(11)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "0",
+      "Extra": ""
+    },
+    {
+      "Field": "documentCount",
+      "Type": "int(11)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "1",
+      "Extra": ""
+    },
+    {
+      "Field": "maxPages",
+      "Type": "int(11)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "documentRelevanceCheck",
+      "Type": "int(11)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "0",
+      "Extra": ""
+    },
+    {
+      "Field": "documentDescription",
+      "Type": "text",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "maskingRequired",
+      "Type": "int(11)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "0",
+      "Extra": ""
+    },
+    {
+      "Field": "maskingTypes",
+      "Type": "json",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "autoMasking",
+      "Type": "int(11)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "0",
+      "Extra": ""
+    },
+    {
+      "Field": "keywords",
+      "Type": "json",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "uniqueId",
+      "Type": "varchar(50)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "creationMethod",
+      "Type": "enum('generator','manual','import')",
+      "Null": "YES",
+      "Key": "",
+      "Default": "manual",
+      "Extra": ""
+    },
+    {
+      "Field": "sourceMetapromptId",
+      "Type": "int(11)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "createdByName",
+      "Type": "varchar(255)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "lastModifiedByName",
+      "Type": "varchar(255)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "templateVersion",
+      "Type": "varchar(20)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "1.0",
+      "Extra": ""
+    },
+    {
+      "Field": "changeLog",
+      "Type": "text",
+      "Null": "YES",
+      "Key": "",
+      "Default": "NULL",
+      "Extra": ""
+    },
+    {
+      "Field": "roiBaseTimeMinutes",
+      "Type": "int(11)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "30",
+      "Extra": ""
+    },
+    {
+      "Field": "roiTimePerDocumentMinutes",
+      "Type": "int(11)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "15",
+      "Extra": ""
+    },
+    {
+      "Field": "roiKi2goTimeMinutes",
+      "Type": "int(11)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "3",
+      "Extra": ""
+    },
+    {
+      "Field": "roiHourlyRate",
+      "Type": "int(11)",
+      "Null": "YES",
+      "Key": "",
+      "Default": "80",
+      "Extra": ""
+    }
+  ],
+  "messages": [],
+  "stdout": "Field\tType\tNull\tKey\tDefault\tExtra\nid\tint(11)\tNO\tPRI\tNULL\tauto_increment\nslug\tvarchar(255)\tNO\tUNI\tNULL\t\nname\tvarchar(255)\tNO\t\tNULL\t\ntitle\tvarchar(255)\tNO\t\tNULL\t\ndescription\ttext\tYES\t\tNULL\t\nshortDescription\tvarchar(500)\tYES\t\tNULL\t\ncategoryId\tint(11)\tYES\t\tNULL\t\nbusinessAreaId\tint(11)\tYES\t\tNULL\t\nicon\tvarchar(100)\tYES\t\tFileText\t\ncolor\tvarchar(20)\tYES\t\tNULL\t\nvariableSchema\tjson\tYES\t\tNULL\t\nsuperprompt\ttext\tYES\t\tNULL\t\nsuperpromptVersion\tint(11)\tYES\t\t1\t\nestimatedTimeSavings\tint(11)\tYES\t\tNULL\t\ncreditCost\tint(11)\tYES\t\t1\t\nallowedFileTypes\tjson\tYES\t\tNULL\t\nmaxFileSize\tint(11)\tYES\t\t10485760\t\nllmModel\tvarchar(100)\tYES\t\tNULL\t\nllmTemperature\tdecimal(3,2)\tYES\t\t0.7\t\ntemplateStatus\tenum('draft','active','archived')\tYES\t\tdraft\t\ndisplayOrder\tint(11)\tYES\t\t0\t\nisFeatured\tint(11)\tYES\t\t0\t\nusageCount\tint(11)\tYES\t\t0\t\navgRating\tdecimal(3,2)\tYES\t\tNULL\t\ncreatedBy\tint(11)\tYES\t\tNULL\t\nupdatedBy\tint(11)\tYES\t\tNULL\t\ncreatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\t\nupdatedAt\ttimestamp\tNO\t\tCURRENT_TIMESTAMP\tDEFAULT_GENERATED on update CURRENT_TIMESTAMP\nmaxTokens\tint(11)\tYES\t\tNULL\t\noutputFormat\tenum('markdown','json','text','html')\tYES\t\tmarkdown\t\nexampleOutput\ttext\tYES\t\tNULL\t\ndocumentRequired\tint(11)\tYES\t\t0\t\ndocumentCount\tint(11)\tYES\t\t1\t\nmaxPages\tint(11)\tYES\t\tNULL\t\ndocumentRelevanceCheck\tint(11)\tYES\t\t0\t\ndocumentDescription\ttext\tYES\t\tNULL\t\nmaskingRequired\tint(11)\tYES\t\t0\t\nmaskingTypes\tjson\tYES\t\tNULL\t\nautoMasking\tint(11)\tYES\t\t0\t\nkeywords\tjson\tYES\t\tNULL\t\nuniqueId\tvarchar(50)\tYES\t\tNULL\t\ncreationMethod\tenum('generator','manual','import')\tYES\t\tmanual\t\nsourceMetapromptId\tint(11)\tYES\t\tNULL\t\ncreatedByName\tvarchar(255)\tYES\t\tNULL\t\nlastModifiedByName\tvarchar(255)\tYES\t\tNULL\t\ntemplateVersion\tvarchar(20)\tYES\t\t1.0\t\nchangeLog\ttext\tYES\t\tNULL\t\nroiBaseTimeMinutes\tint(11)\tYES\t\t30\t\nroiTimePerDocumentMinutes\tint(11)\tYES\t\t15\t\nroiKi2goTimeMinutes\tint(11)\tYES\t\t3\t\nroiHourlyRate\tint(11)\tYES\t\t80\t\n",
+  "stderr": "",
+  "execution_time_ms": 53
+}

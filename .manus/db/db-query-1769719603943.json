@@ -1,0 +1,90 @@
+{
+  "query": "SELECT id, uniqueId, sourceTemplateUniqueId, baseTemplateId, organizationId, version \nFROM customSuperprompts \nLIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute SELECT id, uniqueId, sourceTemplateUniqueId, baseTemplateId, organizationId, version \nFROM customSuperprompts \nLIMIT 10;",
+  "rows": [
+    {
+      "id": "1",
+      "uniqueId": "CT-150-K2026-000-V1",
+      "sourceTemplateUniqueId": "OT-150-V1",
+      "baseTemplateId": "150213",
+      "organizationId": "NULL",
+      "version": "1"
+    },
+    {
+      "id": "2",
+      "uniqueId": "CT-150-K2026-000-V1",
+      "sourceTemplateUniqueId": "OT-150-V1",
+      "baseTemplateId": "150215",
+      "organizationId": "NULL",
+      "version": "1"
+    },
+    {
+      "id": "3",
+      "uniqueId": "CT-150-K2026-000-V1",
+      "sourceTemplateUniqueId": "OT-150-V1",
+      "baseTemplateId": "150216",
+      "organizationId": "NULL",
+      "version": "1"
+    },
+    {
+      "id": "4",
+      "uniqueId": "CT-150-K2026-000-V1",
+      "sourceTemplateUniqueId": "OT-150-V1",
+      "baseTemplateId": "150217",
+      "organizationId": "NULL",
+      "version": "1"
+    },
+    {
+      "id": "5",
+      "uniqueId": "CT-150-K2026-000-V1",
+      "sourceTemplateUniqueId": "OT-150-V1",
+      "baseTemplateId": "150218",
+      "organizationId": "NULL",
+      "version": "1"
+    },
+    {
+      "id": "6",
+      "uniqueId": "CT-150-K2026-000-V1",
+      "sourceTemplateUniqueId": "OT-150-V1",
+      "baseTemplateId": "150219",
+      "organizationId": "NULL",
+      "version": "1"
+    },
+    {
+      "id": "7",
+      "uniqueId": "CT-150-K2026-000-V1",
+      "sourceTemplateUniqueId": "OT-150-V1",
+      "baseTemplateId": "150225",
+      "organizationId": "NULL",
+      "version": "1"
+    },
+    {
+      "id": "8",
+      "uniqueId": "CT-150-K2026-000-V1",
+      "sourceTemplateUniqueId": "OT-150-V1",
+      "baseTemplateId": "150227",
+      "organizationId": "NULL",
+      "version": "1"
+    },
+    {
+      "id": "9",
+      "uniqueId": "CT-150-K2026-000-V1",
+      "sourceTemplateUniqueId": "OT-150-V1",
+      "baseTemplateId": "150228",
+      "organizationId": "NULL",
+      "version": "1"
+    },
+    {
+      "id": "10",
+      "uniqueId": "CT-150-K2026-000-V1",
+      "sourceTemplateUniqueId": "OT-150-V1",
+      "baseTemplateId": "150229",
+      "organizationId": "NULL",
+      "version": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tuniqueId\tsourceTemplateUniqueId\tbaseTemplateId\torganizationId\tversion\n1\tCT-150-K2026-000-V1\tOT-150-V1\t150213\tNULL\t1\n2\tCT-150-K2026-000-V1\tOT-150-V1\t150215\tNULL\t1\n3\tCT-150-K2026-000-V1\tOT-150-V1\t150216\tNULL\t1\n4\tCT-150-K2026-000-V1\tOT-150-V1\t150217\tNULL\t1\n5\tCT-150-K2026-000-V1\tOT-150-V1\t150218\tNULL\t1\n6\tCT-150-K2026-000-V1\tOT-150-V1\t150219\tNULL\t1\n7\tCT-150-K2026-000-V1\tOT-150-V1\t150225\tNULL\t1\n8\tCT-150-K2026-000-V1\tOT-150-V1\t150227\tNULL\t1\n9\tCT-150-K2026-000-V1\tOT-150-V1\t150228\tNULL\t1\n10\tCT-150-K2026-000-V1\tOT-150-V1\t150229\tNULL\t1\n",
+  "stderr": "",
+  "execution_time_ms": 57
+}

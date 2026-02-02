@@ -1,0 +1,24 @@
+{
+  "query": "SELECT ot.organizationId, o.name as orgName, ot.templateId, t.name as templateName, ot.isActive FROM organizationTemplates ot JOIN organizations o ON ot.organizationId = o.id JOIN taskTemplates t ON ot.templateId = t.id LIMIT 20;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute SELECT ot.organizationId, o.name as orgName, ot.templateId, t.name as templateName, ot.isActive FROM organizationTemplates ot JOIN organizations o ON ot.organizationId = o.id JOIN taskTemplates t ON ot.templateId = t.id LIMIT 20;",
+  "rows": [
+    {
+      "organizationId": "90001",
+      "orgName": "KI2GO Testpartner",
+      "templateId": "4",
+      "templateName": "vertrags_analyse",
+      "isActive": "1"
+    },
+    {
+      "organizationId": "120001",
+      "orgName": "Proagentur GmBH",
+      "templateId": "4",
+      "templateName": "vertrags_analyse",
+      "isActive": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "organizationId\torgName\ttemplateId\ttemplateName\tisActive\n90001\tKI2GO Testpartner\t4\tvertrags_analyse\t1\n120001\tProagentur GmBH\t4\tvertrags_analyse\t1\n",
+  "stderr": "",
+  "execution_time_ms": 53
+}

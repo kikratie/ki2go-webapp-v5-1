@@ -1,0 +1,13 @@
+{
+  "query": "SELECT id FROM organizations WHERE slug = 'ki2go-testpartner';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute SELECT id FROM organizations WHERE slug = 'ki2go-testpartner';",
+  "rows": [
+    {
+      "id": "90001"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\n90001\n",
+  "stderr": "",
+  "execution_time_ms": 346
+}

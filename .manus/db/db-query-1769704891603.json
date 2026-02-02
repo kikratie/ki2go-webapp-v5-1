@@ -1,0 +1,20 @@
+{
+  "query": "-- Finde das Template SP-2026-003\nSELECT id, uniqueId, title, isPublic FROM taskTemplates WHERE uniqueId LIKE '%SP-2026-003%' OR uniqueId LIKE '%2026-003%';\n\n-- Zeige alle organizationTemplates für Organization 330025\nSELECT ot.*, tt.uniqueId, tt.title \nFROM organizationTemplates ot \nLEFT JOIN taskTemplates tt ON ot.templateId = tt.id \nWHERE ot.organizationId = 330025;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute -- Finde das Template SP-2026-003\nSELECT id, uniqueId, title, isPublic FROM taskTemplates WHERE uniqueId LIKE '%SP-2026-003%' OR uniqueId LIKE '%2026-003%';\n\n-- Zeige alle organizationTemplates für Organization 330025\nSELECT ot.*, tt.uniqueId, tt.title \nFROM organizationTemplates ot \nLEFT JOIN taskTemplates tt ON ot.templateId = tt.id \nWHERE ot.organizationId = 330025;",
+  "rows": [
+    {
+      "id": "150078",
+      "uniqueId": "SP-2026-003",
+      "title": "Bilanz Monat prüfen ",
+      "isPublic": "1"
+    }
+  ],
+  "messages": [
+    "id\torganizationId\ttemplateId\tisActive\tcustomSettings\tassignedBy\tassignedAt\tuniqueId\ttitle",
+    "330025\t330025\t4\t1\tNULL\t630043\t2026-01-29 16:26:53\tSP-2026-001\tVertrags Analyse",
+    "330026\t330025\t150078\t1\tNULL\t630043\t2026-01-29 16:27:16\tSP-2026-003\tBilanz Monat prüfen "
+  ],
+  "stdout": "id\tuniqueId\ttitle\tisPublic\n150078\tSP-2026-003\tBilanz Monat prüfen \t1\nid\torganizationId\ttemplateId\tisActive\tcustomSettings\tassignedBy\tassignedAt\tuniqueId\ttitle\n330025\t330025\t4\t1\tNULL\t630043\t2026-01-29 16:26:53\tSP-2026-001\tVertrags Analyse\n330026\t330025\t150078\t1\tNULL\t630043\t2026-01-29 16:27:16\tSP-2026-003\tBilanz Monat prüfen \n",
+  "stderr": "",
+  "execution_time_ms": 78
+}

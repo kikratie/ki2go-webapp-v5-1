@@ -1,0 +1,80 @@
+{
+  "query": "SELECT cs.id, cs.name, cs.baseTemplateId, tt.name as baseTemplateName, tt.uniqueId \nFROM customSuperprompts cs \nLEFT JOIN taskTemplates tt ON cs.baseTemplateId = tt.id \nLIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute SELECT cs.id, cs.name, cs.baseTemplateId, tt.name as baseTemplateName, tt.uniqueId \nFROM customSuperprompts cs \nLEFT JOIN taskTemplates tt ON cs.baseTemplateId = tt.id \nLIMIT 10;",
+  "rows": [
+    {
+      "id": "1",
+      "name": "Test Workflow",
+      "baseTemplateId": "150213",
+      "baseTemplateName": "NULL",
+      "uniqueId": "NULL"
+    },
+    {
+      "id": "2",
+      "name": "Test Workflow",
+      "baseTemplateId": "150215",
+      "baseTemplateName": "NULL",
+      "uniqueId": "NULL"
+    },
+    {
+      "id": "3",
+      "name": "Test Workflow",
+      "baseTemplateId": "150216",
+      "baseTemplateName": "NULL",
+      "uniqueId": "NULL"
+    },
+    {
+      "id": "4",
+      "name": "Test Workflow",
+      "baseTemplateId": "150217",
+      "baseTemplateName": "NULL",
+      "uniqueId": "NULL"
+    },
+    {
+      "id": "5",
+      "name": "Test Workflow",
+      "baseTemplateId": "150218",
+      "baseTemplateName": "NULL",
+      "uniqueId": "NULL"
+    },
+    {
+      "id": "6",
+      "name": "Test Workflow",
+      "baseTemplateId": "150219",
+      "baseTemplateName": "NULL",
+      "uniqueId": "NULL"
+    },
+    {
+      "id": "7",
+      "name": "Test Workflow",
+      "baseTemplateId": "150225",
+      "baseTemplateName": "NULL",
+      "uniqueId": "NULL"
+    },
+    {
+      "id": "8",
+      "name": "Test Workflow",
+      "baseTemplateId": "150227",
+      "baseTemplateName": "NULL",
+      "uniqueId": "NULL"
+    },
+    {
+      "id": "9",
+      "name": "Test Workflow",
+      "baseTemplateId": "150228",
+      "baseTemplateName": "NULL",
+      "uniqueId": "NULL"
+    },
+    {
+      "id": "10",
+      "name": "Test Workflow",
+      "baseTemplateId": "150229",
+      "baseTemplateName": "NULL",
+      "uniqueId": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\tbaseTemplateId\tbaseTemplateName\tuniqueId\n1\tTest Workflow\t150213\tNULL\tNULL\n2\tTest Workflow\t150215\tNULL\tNULL\n3\tTest Workflow\t150216\tNULL\tNULL\n4\tTest Workflow\t150217\tNULL\tNULL\n5\tTest Workflow\t150218\tNULL\tNULL\n6\tTest Workflow\t150219\tNULL\tNULL\n7\tTest Workflow\t150225\tNULL\tNULL\n8\tTest Workflow\t150227\tNULL\tNULL\n9\tTest Workflow\t150228\tNULL\tNULL\n10\tTest Workflow\t150229\tNULL\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 85
+}

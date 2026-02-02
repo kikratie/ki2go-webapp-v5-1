@@ -1,0 +1,26 @@
+{
+  "query": "SELECT u.id, u.name, u.email, u.role, u.organizationId, o.name as orgName \nFROM users u \nLEFT JOIN organizations o ON u.organizationId = o.id \nWHERE u.email LIKE '%niaghi%' OR u.email LIKE '%proagentur%';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute SELECT u.id, u.name, u.email, u.role, u.organizationId, o.name as orgName \nFROM users u \nLEFT JOIN organizations o ON u.organizationId = o.id \nWHERE u.email LIKE '%niaghi%' OR u.email LIKE '%proagentur%';",
+  "rows": [
+    {
+      "id": "1",
+      "name": "niaghi",
+      "email": "niaghi@winitec.at",
+      "role": "user",
+      "organizationId": "90001",
+      "orgName": "KI2GO Testpartner"
+    },
+    {
+      "id": "330080",
+      "name": "Niaghi",
+      "email": "Niaghi@proagentur.at",
+      "role": "user",
+      "organizationId": "NULL",
+      "orgName": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\temail\trole\torganizationId\torgName\n1\tniaghi\tniaghi@winitec.at\tuser\t90001\tKI2GO Testpartner\n330080\tNiaghi\tNiaghi@proagentur.at\tuser\tNULL\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 93
+}

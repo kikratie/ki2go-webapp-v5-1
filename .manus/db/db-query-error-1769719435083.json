@@ -1,0 +1,8 @@
+{
+  "query": "ALTER TABLE organizations ADD COLUMN IF NOT EXISTS customerNumber VARCHAR(20) UNIQUE;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute ALTER TABLE organizations ADD COLUMN IF NOT EXISTS customerNumber VARCHAR(20) UNIQUE;",
+  "returncode": 1,
+  "logs": [
+    "ERROR 8200 (HY000) at line 1: unsupported add column 'customernumber' constraint UNIQUE KEY when altering 'Qtfyr7BgTHqDyUMajEnzSf.organizations'"
+  ]
+}

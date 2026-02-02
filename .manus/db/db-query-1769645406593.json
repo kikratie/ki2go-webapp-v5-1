@@ -1,0 +1,16 @@
+{
+  "query": "SHOW TABLES LIKE '%custom%';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute SHOW TABLES LIKE '%custom%';",
+  "rows": [
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf (%custom%)": "customSuperpromptHistory"
+    },
+    {
+      "Tables_in_Qtfyr7BgTHqDyUMajEnzSf (%custom%)": "customSuperprompts"
+    }
+  ],
+  "messages": [],
+  "stdout": "Tables_in_Qtfyr7BgTHqDyUMajEnzSf (%custom%)\ncustomSuperpromptHistory\ncustomSuperprompts\n",
+  "stderr": "",
+  "execution_time_ms": 57
+}

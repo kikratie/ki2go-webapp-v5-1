@@ -1,0 +1,18 @@
+{
+  "query": "SELECT id, uniqueId, title, marketingEnabled, marketingHeadline, marketingSubheadline FROM taskTemplates WHERE uniqueId = 'SP-2026-004' OR id = 4 LIMIT 1;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute SELECT id, uniqueId, title, marketingEnabled, marketingHeadline, marketingSubheadline FROM taskTemplates WHERE uniqueId = 'SP-2026-004' OR id = 4 LIMIT 1;",
+  "rows": [
+    {
+      "id": "4",
+      "uniqueId": "SP-2026-001",
+      "title": "Vertrags Analyse",
+      "marketingEnabled": "0",
+      "marketingHeadline": "NULL",
+      "marketingSubheadline": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tuniqueId\ttitle\tmarketingEnabled\tmarketingHeadline\tmarketingSubheadline\n4\tSP-2026-001\tVertrags Analyse\t0\tNULL\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 188
+}

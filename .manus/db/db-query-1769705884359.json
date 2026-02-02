@@ -1,0 +1,52 @@
+{
+  "query": "SELECT \n  uniqueId, \n  title, \n  documentRequired,\n  documentCount,\n  documentDescription\nFROM taskTemplates \nWHERE uniqueId IN ('SP-2026-001', 'SP-2026-003', 'SP-2026-004', 'SP-2026-006', 'SP-2026-007')\n   OR title = 'Vertrag prüfen'\nORDER BY uniqueId;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute SELECT \n  uniqueId, \n  title, \n  documentRequired,\n  documentCount,\n  documentDescription\nFROM taskTemplates \nWHERE uniqueId IN ('SP-2026-001', 'SP-2026-003', 'SP-2026-004', 'SP-2026-006', 'SP-2026-007')\n   OR title = 'Vertrag prüfen'\nORDER BY uniqueId;",
+  "rows": [
+    {
+      "uniqueId": "NULL",
+      "title": "Vertrag prüfen",
+      "documentRequired": "1",
+      "documentCount": "1",
+      "documentDescription": "Laden Sie den zu prüfenden Vertrag als PDF oder DOCX hoch."
+    },
+    {
+      "uniqueId": "SP-2026-001",
+      "title": "Vertrags Analyse",
+      "documentRequired": "1",
+      "documentCount": "10",
+      "documentDescription": "NULL"
+    },
+    {
+      "uniqueId": "SP-2026-003",
+      "title": "Bilanz Monat prüfen ",
+      "documentRequired": "0",
+      "documentCount": "1",
+      "documentDescription": "NULL"
+    },
+    {
+      "uniqueId": "SP-2026-004",
+      "title": "Vertragsanalyse 2",
+      "documentRequired": "0",
+      "documentCount": "1",
+      "documentDescription": "NULL"
+    },
+    {
+      "uniqueId": "SP-2026-006",
+      "title": "CV Analyse und Bewertung",
+      "documentRequired": "0",
+      "documentCount": "1",
+      "documentDescription": "NULL"
+    },
+    {
+      "uniqueId": "SP-2026-007",
+      "title": "Stellenanzeigen psychologisch optimieren",
+      "documentRequired": "0",
+      "documentCount": "1",
+      "documentDescription": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "uniqueId\ttitle\tdocumentRequired\tdocumentCount\tdocumentDescription\nNULL\tVertrag prüfen\t1\t1\tLaden Sie den zu prüfenden Vertrag als PDF oder DOCX hoch.\nSP-2026-001\tVertrags Analyse\t1\t10\tNULL\nSP-2026-003\tBilanz Monat prüfen \t0\t1\tNULL\nSP-2026-004\tVertragsanalyse 2\t0\t1\tNULL\nSP-2026-006\tCV Analyse und Bewertung\t0\t1\tNULL\nSP-2026-007\tStellenanzeigen psychologisch optimieren\t0\t1\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 52
+}

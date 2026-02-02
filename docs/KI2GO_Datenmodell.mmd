@@ -1,0 +1,334 @@
+erDiagram
+    %% ==================== BENUTZER & ORGANISATIONEN ====================
+    
+    users ||--o{ organizationMembers : "gehört zu"
+    users ||--o{ workflowExecutions : "führt aus"
+    users ||--o{ documents : "lädt hoch"
+    users ||--o{ userSubscriptions : "hat"
+    users ||--o{ customSuperprompts : "besitzt"
+    users ||--o{ templateCategories : "erstellt"
+    
+    users {
+        int id PK
+        string openId UK
+        string email
+        string name
+        enum role "admin|user"
+        int organizationId FK
+        timestamp createdAt
+    }
+    
+    organizations ||--o{ organizationMembers : "hat"
+    organizations ||--o{ organizationSubscriptions : "hat"
+    organizations ||--o{ organizationTemplates : "nutzt"
+    organizations ||--o{ creditTransactions : "verbraucht"
+    
+    organizations {
+        int id PK
+        string name
+        string slug UK
+        string industry
+        int employeeCount
+        int ownerId FK
+        boolean isActive
+        timestamp createdAt
+    }
+    
+    organizationMembers {
+        int id PK
+        int organizationId FK
+        int userId FK
+        enum role "owner|admin|member"
+        timestamp joinedAt
+    }
+    
+    %% ==================== TEMPLATES & SUPERPROMPTS ====================
+    
+    taskTemplates ||--o{ templateVariables : "definiert"
+    taskTemplates ||--o{ organizationTemplates : "freigegeben für"
+    taskTemplates ||--o{ workflowExecutions : "verwendet in"
+    taskTemplates ||--o{ customSuperprompts : "Basis für"
+    taskTemplates }o--|| categories : "gehört zu"
+    taskTemplates }o--|| businessAreas : "gehört zu"
+    
+    taskTemplates {
+        int id PK
+        string uniqueId UK "SP-YYYY-NNN"
+        string name
+        string slug UK
+        text superprompt
+        int categoryId FK
+        int businessAreaId FK
+        boolean isActive
+        json marketingUsps
+        string marketingHeadline
+        int roiBaseTimeMinutes
+        timestamp createdAt
+    }
+    
+    templateVariables {
+        int id PK
+        int templateId FK
+        string key
+        string label
+        enum type "text|textarea|select|number|date|file"
+        json options
+        boolean required
+        int sortOrder
+    }
+    
+    categories {
+        int id PK
+        string name
+        string slug UK
+        string icon
+        string color
+        int sortOrder
+        boolean isActive
+    }
+    
+    businessAreas {
+        int id PK
+        string name
+        string slug UK
+        string icon
+        int sortOrder
+        boolean isActive
+    }
+    
+    %% ==================== CUSTOM TEMPLATES (Kunden-spezifisch) ====================
+    
+    customSuperprompts ||--o{ templateCategoryAssignments : "kategorisiert in"
+    customSuperprompts ||--o{ templateMemberAssignments : "freigegeben für"
+    
+    customSuperprompts {
+        int id PK
+        string uniqueId UK "SP-YYYY-NNN-KXXX-V1"
+        string sourceTemplateUniqueId
+        int baseTemplateId FK
+        int organizationId FK
+        int userId FK
+        string name
+        text superprompt
+        int version
+        int usageCount
+        boolean isActive
+        timestamp createdAt
+    }
+    
+    templateCategories ||--o{ templateCategoryAssignments : "enthält"
+    
+    templateCategories {
+        int id PK
+        int userId FK
+        int organizationId FK
+        string name
+        string color
+        int sortOrder
+    }
+    
+    templateCategoryAssignments {
+        int id PK
+        int customTemplateId FK
+        int categoryId FK
+    }
+    
+    templateMemberAssignments {
+        int id PK
+        int customTemplateId FK
+        int userId FK
+        int assignedBy FK
+        boolean canUse
+        boolean canView
+    }
+    
+    %% ==================== WORKFLOW AUSFÜHRUNG ====================
+    
+    workflowExecutions ||--o{ workflowFeedback : "bewertet durch"
+    workflowExecutions ||--o{ documentUsage : "verwendet"
+    
+    workflowExecutions {
+        int id PK
+        string sessionId UK
+        int userId FK
+        int organizationId FK
+        int templateId FK
+        json variableValues
+        json documentIds
+        text superpromptUsed
+        text result
+        enum status "pending|processing|completed|failed"
+        int promptTokens
+        int completionTokens
+        decimal estimatedCost
+        int executionTimeMs
+        timestamp startedAt
+        timestamp completedAt
+    }
+    
+    workflowFeedback {
+        int id PK
+        int executionId FK
+        int userId FK
+        int templateId FK
+        enum rating "positive|negative"
+        text comment
+        text improvementSuggestion
+        enum reviewStatus "pending|reviewed|implemented"
+        timestamp createdAt
+    }
+    
+    %% ==================== DOKUMENTE ====================
+    
+    documents ||--o{ documentUsage : "genutzt in"
+    
+    documents {
+        int id PK
+        int userId FK
+        int organizationId FK
+        string originalName
+        string mimeType
+        int fileSize
+        string fileUrl
+        text extractedText
+        int pageCount
+        boolean isOcrRequired
+        timestamp uploadedAt
+    }
+    
+    documentUsage {
+        int id PK
+        int documentId FK
+        int executionId FK
+        int userId FK
+        enum usageType "upload|task_input|analysis|download"
+        decimal cost
+        int tokensUsed
+        timestamp createdAt
+    }
+    
+    %% ==================== PREISPLÄNE & SUBSCRIPTIONS ====================
+    
+    plans ||--o{ userSubscriptions : "abonniert von"
+    plans ||--o{ organizationSubscriptions : "abonniert von"
+    
+    plans {
+        int id PK
+        string slug UK "free|starter|business|enterprise"
+        string name
+        int taskLimit
+        int customTemplateLimit
+        int storageLimit
+        int teamMemberLimit
+        text features "JSON Array"
+        decimal priceMonthly
+        boolean isActive
+    }
+    
+    userSubscriptions {
+        int id PK
+        int userId FK
+        int planId FK
+        enum status "active|trial|cancelled|expired"
+        timestamp startedAt
+        timestamp validUntil
+        enum billingCycle "monthly|yearly"
+    }
+    
+    organizationSubscriptions {
+        int id PK
+        int organizationId FK
+        int planId FK
+        enum status "trial|active|expired|cancelled"
+        timestamp validUntil
+        int creditsUsed
+        int creditsTotal
+    }
+    
+    usageTracking {
+        int id PK
+        int userId FK
+        string periodMonth "YYYY-MM"
+        int tasksUsed
+        int storageUsedMb
+        int customTemplatesCreated
+        int documentsUploaded
+    }
+    
+    %% ==================== ANFRAGEN ====================
+    
+    taskRequests {
+        int id PK
+        text description
+        int categoryId FK
+        int businessAreaId FK
+        int userId FK
+        int organizationId FK
+        enum status "new|reviewing|offer_sent|accepted|rejected"
+        decimal offerPrice
+        text offerText
+        timestamp deadline
+        timestamp createdAt
+    }
+    
+    %% ==================== AUDIT & KOSTEN ====================
+    
+    processAuditLog {
+        int id PK
+        string processId UK "KI2GO-YYYY-NNNNN"
+        int userId FK
+        int organizationId FK
+        int executionId FK
+        int templateId FK
+        enum processType "task_execution|document_upload|masking"
+        int inputTokens
+        int outputTokens
+        decimal totalCost
+        enum status "started|processing|completed|failed"
+        timestamp startedAt
+    }
+    
+    costSummary {
+        int id PK
+        timestamp date
+        int organizationId FK
+        int userId FK
+        int templateId FK
+        int executionCount
+        int totalTokens
+        decimal totalCost
+    }
+    
+    creditTransactions {
+        int id PK
+        int organizationId FK
+        int userId FK
+        int amount
+        enum transactionType "subscription_credit|execution|bonus|refund"
+        int executionId FK
+        timestamp createdAt
+    }
+    
+    adminAuditLog {
+        int id PK
+        int adminUserId FK
+        string action
+        enum actionCategory "user_management|template_management|subscription_management"
+        string targetType
+        int targetId
+        json previousValue
+        json newValue
+        timestamp createdAt
+    }
+    
+    %% ==================== METAPROMPTS ====================
+    
+    metapromptTemplates {
+        int id PK
+        string name
+        text content
+        text systemPrompt
+        boolean isDefault
+        boolean isActive
+        timestamp createdAt
+    }

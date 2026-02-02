@@ -1,0 +1,9 @@
+{
+  "query": "CREATE TABLE IF NOT EXISTS templateChangeRequests (\n  id INT AUTO_INCREMENT PRIMARY KEY,\n  customTemplateId INT NOT NULL,\n  requestedBy INT NOT NULL,\n  organizationId INT,\n  title VARCHAR(255) NOT NULL,\n  description TEXT NOT NULL,\n  reason TEXT,\n  priority ENUM('low', 'normal', 'high', 'urgent') DEFAULT 'normal',\n  status ENUM('open', 'in_review', 'in_progress', 'implemented', 'rejected', 'closed') DEFAULT 'open',\n  assignedTo INT,\n  reviewNote TEXT,\n  rejectionReason TEXT,\n  resultType ENUM('custom_only', 'owner_updated', 'no_change'),\n  resultNote TEXT,\n  newVersion INT,\n  createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,\n  updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL,\n  reviewedAt TIMESTAMP,\n  completedAt TIMESTAMP\n);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute CREATE TABLE IF NOT EXISTS templateChangeRequests (\n  id INT AUTO_INCREMENT PRIMARY KEY,\n  customTemplateId INT NOT NULL,\n  requestedBy INT NOT NULL,\n  organizationId INT,\n  title VARCHAR(255) NOT NULL,\n  description TEXT NOT NULL,\n  reason TEXT,\n  priority ENUM('low', 'normal', 'high', 'urgent') DEFAULT 'normal',\n  status ENUM('open', 'in_review', 'in_progress', 'implemented', 'rejected', 'closed') DEFAULT 'open',\n  assignedTo INT,\n  reviewNote TEXT,\n  rejectionReason TEXT,\n  resultType ENUM('custom_only', 'owner_updated', 'no_change'),\n  resultNote TEXT,\n  newVersion INT,\n  createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,\n  updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL,\n  reviewedAt TIMESTAMP,\n  completedAt TIMESTAMP\n);",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 190
+}

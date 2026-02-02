@@ -1,0 +1,8 @@
+{
+  "query": "UPDATE user_usage SET current_value = 0 WHERE user_id = 1 AND limit_type = 'tasks';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute UPDATE user_usage SET current_value = 0 WHERE user_id = 1 AND limit_type = 'tasks';",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1146 (42S02) at line 1: Table 'qtfyr7bgthqdyumajenzsf.user_usage' doesn't exist"
+  ]
+}

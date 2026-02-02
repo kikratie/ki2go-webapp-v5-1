@@ -1,0 +1,25 @@
+{
+  "query": "SELECT id, variableValues, startedAt FROM workflowExecutions ORDER BY startedAt DESC LIMIT 3;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute SELECT id, variableValues, startedAt FROM workflowExecutions ORDER BY startedAt DESC LIMIT 3;",
+  "rows": [
+    {
+      "id": "240007",
+      "variableValues": "{\"ANWENDUNGSFALL_BESCHREIBUNG_DURCH_DEN_USER\": \"risikobewertung \", \"KRITISCHE_SCHWERPUNKTE\": \"alles\", \"OUTPUT_WUNSCH\": \"Zusammenfassender Bericht (Executive Summary)\", \"RECHTSRAUM\": \"Österreich (AT)\", \"ROLLEN_IM_VERTRAG\": \"Auftraggeber (Kunde)\", \"VERTRAGSTYP\": \"Mietvertrag (Lease Agreement)\", \"ZIEL\": \"Risikominimierung\"}",
+      "startedAt": "2026-01-29 07:19:09"
+    },
+    {
+      "id": "180097",
+      "variableValues": "{\"TEXT\": \"Test für Feedback\"}",
+      "startedAt": "2026-01-28 22:28:57"
+    },
+    {
+      "id": "180036",
+      "variableValues": "{\"BERICHTSMONAT\": \"2025-05\", \"DOKUMENT\": \"ist geladen\", \"RECHTSRAUM\": \"Österreich (UGB)\", \"VORMONAT\": \"2025-04\", \"WAEHRUNG\": \"EUR (Euro)\"}",
+      "startedAt": "2026-01-28 19:37:24"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tvariableValues\tstartedAt\n240007\t{\"ANWENDUNGSFALL_BESCHREIBUNG_DURCH_DEN_USER\": \"risikobewertung \", \"KRITISCHE_SCHWERPUNKTE\": \"alles\", \"OUTPUT_WUNSCH\": \"Zusammenfassender Bericht (Executive Summary)\", \"RECHTSRAUM\": \"Österreich (AT)\", \"ROLLEN_IM_VERTRAG\": \"Auftraggeber (Kunde)\", \"VERTRAGSTYP\": \"Mietvertrag (Lease Agreement)\", \"ZIEL\": \"Risikominimierung\"}\t2026-01-29 07:19:09\n180097\t{\"TEXT\": \"Test für Feedback\"}\t2026-01-28 22:28:57\n180036\t{\"BERICHTSMONAT\": \"2025-05\", \"DOKUMENT\": \"ist geladen\", \"RECHTSRAUM\": \"Österreich (UGB)\", \"VORMONAT\": \"2025-04\", \"WAEHRUNG\": \"EUR (Euro)\"}\t2026-01-28 19:37:24\n",
+  "stderr": "",
+  "execution_time_ms": 59
+}

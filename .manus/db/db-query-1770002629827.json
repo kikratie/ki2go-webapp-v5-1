@@ -1,0 +1,90 @@
+{
+  "query": "SELECT id, slug, name, description, icon, color, displayOrder, isActive FROM categories;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute SELECT id, slug, name, description, icon, color, displayOrder, isActive FROM categories;",
+  "rows": [
+    {
+      "id": "1",
+      "slug": "analysieren_pruefen",
+      "name": "Analysieren & Prüfen",
+      "description": "Dokumente, Verträge und Daten analysieren und prüfen",
+      "icon": "Search",
+      "color": "#5FBDCE",
+      "displayOrder": "1",
+      "isActive": "1"
+    },
+    {
+      "id": "2",
+      "slug": "erstellen_kreieren",
+      "name": "Erstellen & Kreieren",
+      "description": "Neue Inhalte, Dokumente und Präsentationen erstellen",
+      "icon": "PenTool",
+      "color": "#F97316",
+      "displayOrder": "2",
+      "isActive": "1"
+    },
+    {
+      "id": "3",
+      "slug": "schreiben_verfassen",
+      "name": "Schreiben & Verfassen",
+      "description": "Texte, E-Mails und Berichte schreiben",
+      "icon": "FileText",
+      "color": "#1E3A5F",
+      "displayOrder": "3",
+      "isActive": "1"
+    },
+    {
+      "id": "4",
+      "slug": "recherche_suche",
+      "name": "Recherche & Suche",
+      "description": "Informationen recherchieren und zusammentragen",
+      "icon": "Globe",
+      "color": "#10B981",
+      "displayOrder": "4",
+      "isActive": "1"
+    },
+    {
+      "id": "5",
+      "slug": "uebersetzen_umwandeln",
+      "name": "Übersetzen & Umwandeln",
+      "description": "Texte übersetzen und Formate umwandeln",
+      "icon": "Languages",
+      "color": "#8B5CF6",
+      "displayOrder": "5",
+      "isActive": "1"
+    },
+    {
+      "id": "6",
+      "slug": "vergleichen_zusammenfassen",
+      "name": "Vergleichen & Bewerten",
+      "description": "Optionen vergleichen und bewerten",
+      "icon": "Scale",
+      "color": "#EC4899",
+      "displayOrder": "6",
+      "isActive": "1"
+    },
+    {
+      "id": "7",
+      "slug": "zusammenfassen_erklaeren",
+      "name": "Zusammenfassen & Erklären",
+      "description": "Komplexe Inhalte zusammenfassen und erklären",
+      "icon": "BookOpen",
+      "color": "#06B6D4",
+      "displayOrder": "7",
+      "isActive": "1"
+    },
+    {
+      "id": "8",
+      "slug": "planen_organisieren",
+      "name": "Planen & Organisieren",
+      "description": "Projekte und Aufgaben planen und organisieren",
+      "icon": "Calendar",
+      "color": "#F59E0B",
+      "displayOrder": "8",
+      "isActive": "1"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tslug\tname\tdescription\ticon\tcolor\tdisplayOrder\tisActive\n1\tanalysieren_pruefen\tAnalysieren & Prüfen\tDokumente, Verträge und Daten analysieren und prüfen\tSearch\t#5FBDCE\t1\t1\n2\terstellen_kreieren\tErstellen & Kreieren\tNeue Inhalte, Dokumente und Präsentationen erstellen\tPenTool\t#F97316\t2\t1\n3\tschreiben_verfassen\tSchreiben & Verfassen\tTexte, E-Mails und Berichte schreiben\tFileText\t#1E3A5F\t3\t1\n4\trecherche_suche\tRecherche & Suche\tInformationen recherchieren und zusammentragen\tGlobe\t#10B981\t4\t1\n5\tuebersetzen_umwandeln\tÜbersetzen & Umwandeln\tTexte übersetzen und Formate umwandeln\tLanguages\t#8B5CF6\t5\t1\n6\tvergleichen_zusammenfassen\tVergleichen & Bewerten\tOptionen vergleichen und bewerten\tScale\t#EC4899\t6\t1\n7\tzusammenfassen_erklaeren\tZusammenfassen & Erklären\tKomplexe Inhalte zusammenfassen und erklären\tBookOpen\t#06B6D4\t7\t1\n8\tplanen_organisieren\tPlanen & Organisieren\tProjekte und Aufgaben planen und organisieren\tCalendar\t#F59E0B\t8\t1\n",
+  "stderr": "",
+  "execution_time_ms": 56
+}

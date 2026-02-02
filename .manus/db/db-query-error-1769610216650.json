@@ -1,0 +1,8 @@
+{
+  "query": "INSERT INTO organizations (name, slug, description, industry, employeeCount, createdBy, isActive) \nVALUES ('KI2GO Testpartner', 'ki2go-testpartner', 'Test-Organisation für Pilotphase', 'Technologie', '1-10', 37, 1);",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute INSERT INTO organizations (name, slug, description, industry, employeeCount, createdBy, isActive) \nVALUES ('KI2GO Testpartner', 'ki2go-testpartner', 'Test-Organisation für Pilotphase', 'Technologie', '1-10', 37, 1);",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 1: Unknown column 'description' in 'field list'"
+  ]
+}

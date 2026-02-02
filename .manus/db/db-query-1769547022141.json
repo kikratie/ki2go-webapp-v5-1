@@ -1,0 +1,12 @@
+{
+  "query": "SELECT id, uniqueId, title, slug, LEFT(superprompt, 100) as superprompt_preview, creationMethod, createdAt FROM taskTemplates ORDER BY id DESC LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway02.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43dcVLjT8BtYBTF.073b9f7b405e --database Qtfyr7BgTHqDyUMajEnzSf --execute SELECT id, uniqueId, title, slug, LEFT(superprompt, 100) as superprompt_preview, creationMethod, createdAt FROM taskTemplates ORDER BY id DESC LIMIT 10;",
+  "rows": [],
+  "messages": [
+    "3\tSP-2026-001\tAnalysiere Verrag auf rechtliche Risiken\tanalysiere_verrag_auf_rechtliche_risiken_unklare\tKategorie: Analysieren & Prüfen",
+    "Anwendungsfall: Juristische und wirtschaftliche Prüfung von Verträge\tgenerator\t2026-01-27 20:48:05"
+  ],
+  "stdout": "id\tuniqueId\ttitle\tslug\tsuperprompt_preview\tcreationMethod\tcreatedAt\n3\tSP-2026-001\tAnalysiere Verrag auf rechtliche Risiken\tanalysiere_verrag_auf_rechtliche_risiken_unklare\tKategorie: Analysieren & Prüfen\nAnwendungsfall: Juristische und wirtschaftliche Prüfung von Verträge\tgenerator\t2026-01-27 20:48:05\n",
+  "stderr": "",
+  "execution_time_ms": 59
+}
